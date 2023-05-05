@@ -91,6 +91,12 @@
     <Compile Include="View\ChuBai.Designer.cs">
       <DependentUpon>ChuBai.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormUpdateChuBai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormUpdateChuBai.Designer.cs">
+      <DependentUpon>FormUpdateChuBai.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormUpdateNguoiNhanCauAn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\ChuBai.resx">
       <DependentUpon>ChuBai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormUpdateChuBai.resx">
+      <DependentUpon>FormUpdateChuBai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormUpdateNguoiNhanCauAn.resx">
       <DependentUpon>FormUpdateNguoiNhanCauAn.cs</DependentUpon>

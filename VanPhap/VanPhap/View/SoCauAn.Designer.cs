@@ -68,6 +68,7 @@
             this.btn_Update = new System.Windows.Forms.Button();
             this.btn_Add = new System.Windows.Forms.Button();
             this.btn_print = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnl_List.SuspendLayout();
             this.pnl_Form.SuspendLayout();
             this.SuspendLayout();
@@ -420,7 +421,6 @@
             this.txt_id.TabIndex = 30;
             this.txt_id.TabStop = false;
             this.txt_id.Text = " ";
-            this.txt_id.Visible = false;
             // 
             // txt_idchubai
             // 
@@ -431,7 +431,6 @@
             this.txt_idchubai.Name = "txt_idchubai";
             this.txt_idchubai.Size = new System.Drawing.Size(115, 46);
             this.txt_idchubai.TabIndex = 31;
-            this.txt_idchubai.Visible = false;
             // 
             // pnl_Form
             // 
@@ -439,6 +438,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnl_Form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pnl_Form.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnl_Form.Controls.Add(this.button1);
             this.pnl_Form.Controls.Add(this.txt_idchubai);
             this.pnl_Form.Controls.Add(this.txt_id);
             this.pnl_Form.Controls.Add(this.txt_gioi_tinh);
@@ -550,6 +550,23 @@
             this.btn_print.UseVisualStyleBackColor = true;
             this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
             // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ImageIndex = 3;
+            this.button1.ImageList = this.imageList1;
+            this.button1.Location = new System.Drawing.Point(1053, 157);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(173, 49);
+            this.button1.TabIndex = 108;
+            this.button1.Text = "Sửa";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // SoCauAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -618,5 +635,6 @@
         private System.Windows.Forms.Panel pnl_Form;
         private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.Button btn_print;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -14,12 +14,13 @@ using System.Windows.Forms;
 using VanPhap.Controller;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using ListView = System.Windows.Forms.ListView;
+using Color = System.Drawing.Color;
 
 namespace VanPhap.View
 {
     public partial class SoCauAn : Form
     {
-        string strCon = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Git\\V-n-Ph-p\\VanPhap\\VanPhap\\bin\\Debug\\Demo.accdb";
+        string strCon = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Git\\VanPhap\\VanPhap\\VanPhap\\bin\\Debug\\Demo.accdb";
         OleDbConnection sqlCon = null;
         //Hàm mở kết nối db
         public void OpenConection()
@@ -281,6 +282,7 @@ namespace VanPhap.View
             }
             else
             {
+               
                 if (lsv_danhsach_cauan.SelectedItems.Count > 0)
                 {
                     // Lấy giá trị khóa chính từ dòng đang chọn
@@ -432,6 +434,11 @@ namespace VanPhap.View
 
                 }
             
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
 
         }
     }

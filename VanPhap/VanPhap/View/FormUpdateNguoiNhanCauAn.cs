@@ -19,7 +19,7 @@ namespace VanPhap.View
         }
 
 
-        string strCon = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Git\\V-n-Ph-p\\VanPhap\\VanPhap\\bin\\Debug\\Demo.accdb";
+        string strCon = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Git\\VanPhap\\VanPhap\\VanPhap\\bin\\Debug\\Demo.accdb";
         OleDbConnection sqlCon = null;
         //Hàm mở kết nối db
         public void OpenConection()
@@ -918,7 +918,7 @@ namespace VanPhap.View
             {
                 txt_GioiTinhThemVaoDb.Text = "2";
             }
-
+            
             if (lsv_danhsach_cauan.SelectedItems.Count > 0)
             {
                 // Lấy giá trị khóa chính từ dòng đang chọn
@@ -982,6 +982,11 @@ namespace VanPhap.View
                     }
                 }
             }//Dong if
+        }
+
+        private void lsv_danhsach_cauan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
     }

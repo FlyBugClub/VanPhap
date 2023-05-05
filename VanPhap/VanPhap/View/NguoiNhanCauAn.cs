@@ -14,7 +14,7 @@ namespace VanPhap.View
 {
     public partial class NguoiNhanCauAn : Form
     {
-        string strCon = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Git\\V-n-Ph-p\\VanPhap\\VanPhap\\bin\\Debug\\Demo.accdb";
+        string strCon = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Git\\VanPhap\\VanPhap\\VanPhap\\bin\\Debug\\Demo.accdb";
         OleDbConnection sqlCon = null;
         //Hàm mở kết nối db
 
@@ -343,7 +343,7 @@ namespace VanPhap.View
                 MessageBox.Show("Chủ bái đang trống!\nVui lòng chọn || Có sớ || Chưa có sớ || để thêm chủ bái!");
             }
             else
-            {
+            { 
                 // Kiểm tra coi có id chưa
                 string query1 = "select ID from tblchitietso where idso = @Id ";
                 using (OleDbConnection connection = new OleDbConnection(strCon))
@@ -476,7 +476,7 @@ namespace VanPhap.View
                     string hoten = txt_name.Text;
                     string phapdanh = txt_nickname.Text;
                     // Tạo đối tượng Command và liên kết với Connection
-                    string query4 = "INSERT INTO tblChiTietSo (ID,IDSo, NamNu, AmLich , Sao, Han , HoTenUni,  PhapDanhUni)   VALUES (?,?,?,?,?,?,?,?) ";
+                    string query4 = "INSERT INTO tblChiTietSo (ID,IDSo, NamNu,NamSinh, AmLich , Sao, Han , HoTenUni,  PhapDanhUni)   VALUES (?,?,?,?,?,?,?,?,?) ";
                     using (OleDbConnection connection = new OleDbConnection(strCon))
                     {
                         using (OleDbCommand command = new OleDbCommand(query4, connection))
@@ -488,6 +488,7 @@ namespace VanPhap.View
                             command.Parameters.AddWithValue("?", id);
                             command.Parameters.AddWithValue("?", idso);
                             command.Parameters.AddWithValue("?", namnu);
+                            command.Parameters.AddWithValue("?", namsinh);
                             command.Parameters.AddWithValue("?", amlich);
                             command.Parameters.AddWithValue("?", sao);
                             command.Parameters.AddWithValue("?", han);
