@@ -37,8 +37,8 @@
             this.rbm_Man = new System.Windows.Forms.RadioButton();
             this.rbm_Woman = new System.Windows.Forms.RadioButton();
             this.lbl_nguyen_quan = new System.Windows.Forms.Label();
-            this.txt_luutru = new System.Windows.Forms.TextBox();
             this.txt_nguyenquan = new System.Windows.Forms.TextBox();
+            this.txt_diachi = new System.Windows.Forms.TextBox();
             this.lbl_LuuTru = new System.Windows.Forms.Label();
             this.txt_name = new System.Windows.Forms.TextBox();
             this.txt_id = new System.Windows.Forms.TextBox();
@@ -46,7 +46,7 @@
             this.txt_nickname = new System.Windows.Forms.TextBox();
             this.txt_gioi_tinh = new System.Windows.Forms.TextBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.btn_Add = new System.Windows.Forms.Button();
+            this.btn_update = new System.Windows.Forms.Button();
             this.pnl_Form.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,8 +60,8 @@
             this.pnl_Form.Controls.Add(this.rbm_Man);
             this.pnl_Form.Controls.Add(this.rbm_Woman);
             this.pnl_Form.Controls.Add(this.lbl_nguyen_quan);
-            this.pnl_Form.Controls.Add(this.txt_luutru);
             this.pnl_Form.Controls.Add(this.txt_nguyenquan);
+            this.pnl_Form.Controls.Add(this.txt_diachi);
             this.pnl_Form.Controls.Add(this.lbl_LuuTru);
             this.pnl_Form.Controls.Add(this.txt_name);
             this.pnl_Form.Controls.Add(this.txt_id);
@@ -101,12 +101,11 @@
             // txt_id1
             // 
             this.txt_id1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_id1.Location = new System.Drawing.Point(368, 12);
+            this.txt_id1.Location = new System.Drawing.Point(388, 14);
             this.txt_id1.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id1.Name = "txt_id1";
-            this.txt_id1.Size = new System.Drawing.Size(12, 35);
+            this.txt_id1.Size = new System.Drawing.Size(59, 35);
             this.txt_id1.TabIndex = 36;
-            this.txt_id1.Visible = false;
             // 
             // rbm_Man
             // 
@@ -141,28 +140,28 @@
             this.lbl_nguyen_quan.Location = new System.Drawing.Point(425, 14);
             this.lbl_nguyen_quan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_nguyen_quan.Name = "lbl_nguyen_quan";
-            this.lbl_nguyen_quan.Size = new System.Drawing.Size(140, 27);
+            this.lbl_nguyen_quan.Size = new System.Drawing.Size(81, 27);
             this.lbl_nguyen_quan.TabIndex = 33;
-            this.lbl_nguyen_quan.Text = "Nguyên quán";
+            this.lbl_nguyen_quan.Text = "Địa chỉ";
             this.lbl_nguyen_quan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txt_luutru
-            // 
-            this.txt_luutru.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_luutru.Location = new System.Drawing.Point(574, 47);
-            this.txt_luutru.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_luutru.Name = "txt_luutru";
-            this.txt_luutru.Size = new System.Drawing.Size(241, 35);
-            this.txt_luutru.TabIndex = 5;
             // 
             // txt_nguyenquan
             // 
             this.txt_nguyenquan.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nguyenquan.Location = new System.Drawing.Point(574, 4);
+            this.txt_nguyenquan.Location = new System.Drawing.Point(574, 47);
             this.txt_nguyenquan.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nguyenquan.Name = "txt_nguyenquan";
             this.txt_nguyenquan.Size = new System.Drawing.Size(241, 35);
-            this.txt_nguyenquan.TabIndex = 4;
+            this.txt_nguyenquan.TabIndex = 5;
+            // 
+            // txt_diachi
+            // 
+            this.txt_diachi.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_diachi.Location = new System.Drawing.Point(574, 4);
+            this.txt_diachi.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_diachi.Name = "txt_diachi";
+            this.txt_diachi.Size = new System.Drawing.Size(241, 35);
+            this.txt_diachi.TabIndex = 4;
             // 
             // lbl_LuuTru
             // 
@@ -171,9 +170,9 @@
             this.lbl_LuuTru.Location = new System.Drawing.Point(425, 57);
             this.lbl_LuuTru.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_LuuTru.Name = "lbl_LuuTru";
-            this.lbl_LuuTru.Size = new System.Drawing.Size(85, 27);
+            this.lbl_LuuTru.Size = new System.Drawing.Size(140, 27);
             this.lbl_LuuTru.TabIndex = 26;
-            this.lbl_LuuTru.Text = "Lưu trú";
+            this.lbl_LuuTru.Text = "Nguyên quán";
             this.lbl_LuuTru.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txt_name
@@ -240,21 +239,22 @@
             this.imageList1.Images.SetKeyName(7, "Button-Refresh-icon.png");
             this.imageList1.Images.SetKeyName(8, "bin.png");
             // 
-            // btn_Add
+            // btn_update
             // 
-            this.btn_Add.FlatAppearance.BorderSize = 0;
-            this.btn_Add.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Add.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Add.ImageIndex = 0;
-            this.btn_Add.ImageList = this.imageList1;
-            this.btn_Add.Location = new System.Drawing.Point(876, 25);
-            this.btn_Add.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_Add.Name = "btn_Add";
-            this.btn_Add.Size = new System.Drawing.Size(153, 42);
-            this.btn_Add.TabIndex = 68;
-            this.btn_Add.Text = "Thêm";
-            this.btn_Add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Add.UseVisualStyleBackColor = true;
+            this.btn_update.FlatAppearance.BorderSize = 0;
+            this.btn_update.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_update.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_update.ImageIndex = 0;
+            this.btn_update.ImageList = this.imageList1;
+            this.btn_update.Location = new System.Drawing.Point(876, 25);
+            this.btn_update.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(153, 42);
+            this.btn_update.TabIndex = 68;
+            this.btn_update.Text = "Cập nhật";
+            this.btn_update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // FormUpdateChuBai
             // 
@@ -262,7 +262,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1057, 223);
             this.Controls.Add(this.pnl_Form);
-            this.Controls.Add(this.btn_Add);
+            this.Controls.Add(this.btn_update);
             this.Name = "FormUpdateChuBai";
             this.Text = "FormUpdateChuBai";
             this.Load += new System.EventHandler(this.FormUpdateChuBai_Load);
@@ -281,8 +281,8 @@
         private System.Windows.Forms.RadioButton rbm_Man;
         private System.Windows.Forms.RadioButton rbm_Woman;
         private System.Windows.Forms.Label lbl_nguyen_quan;
-        private System.Windows.Forms.TextBox txt_luutru;
         private System.Windows.Forms.TextBox txt_nguyenquan;
+        private System.Windows.Forms.TextBox txt_diachi;
         private System.Windows.Forms.Label lbl_LuuTru;
         private System.Windows.Forms.TextBox txt_name;
         private System.Windows.Forms.TextBox txt_id;
@@ -290,6 +290,6 @@
         private System.Windows.Forms.TextBox txt_nickname;
         private System.Windows.Forms.TextBox txt_gioi_tinh;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Button btn_Add;
+        private System.Windows.Forms.Button btn_update;
     }
 }

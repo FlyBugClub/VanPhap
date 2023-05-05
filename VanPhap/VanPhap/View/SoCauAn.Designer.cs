@@ -56,19 +56,19 @@
             this.lbl_name = new System.Windows.Forms.Label();
             this.rbm_Man = new System.Windows.Forms.RadioButton();
             this.rbm_Woman = new System.Windows.Forms.RadioButton();
-            this.txt_luutru = new System.Windows.Forms.TextBox();
+            this.txt_nguyenquan = new System.Windows.Forms.TextBox();
             this.lbl_LuuTru = new System.Windows.Forms.Label();
             this.txt_diachi = new System.Windows.Forms.TextBox();
             this.txt_gioi_tinh = new System.Windows.Forms.TextBox();
             this.txt_id = new System.Windows.Forms.TextBox();
             this.txt_idchubai = new System.Windows.Forms.TextBox();
             this.pnl_Form = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_lammoi = new System.Windows.Forms.Button();
             this.btn_Delete = new System.Windows.Forms.Button();
             this.btn_Update = new System.Windows.Forms.Button();
             this.btn_Add = new System.Windows.Forms.Button();
             this.btn_print = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.pnl_List.SuspendLayout();
             this.pnl_Form.SuspendLayout();
             this.SuspendLayout();
@@ -360,17 +360,18 @@
             this.rbm_Woman.Text = "Nữ";
             this.rbm_Woman.UseVisualStyleBackColor = true;
             // 
-            // txt_luutru
+            // txt_nguyenquan
             // 
-            this.txt_luutru.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txt_luutru.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_luutru.Location = new System.Drawing.Point(861, 103);
-            this.txt_luutru.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_luutru.Name = "txt_luutru";
-            this.txt_luutru.ReadOnly = true;
-            this.txt_luutru.Size = new System.Drawing.Size(343, 46);
-            this.txt_luutru.TabIndex = 4;
-            this.txt_luutru.TextChanged += new System.EventHandler(this.txt_luutru_TextChanged);
+            this.txt_nguyenquan.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.txt_nguyenquan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txt_nguyenquan.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nguyenquan.Location = new System.Drawing.Point(861, 103);
+            this.txt_nguyenquan.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_nguyenquan.Name = "txt_nguyenquan";
+            this.txt_nguyenquan.ReadOnly = true;
+            this.txt_nguyenquan.Size = new System.Drawing.Size(343, 46);
+            this.txt_nguyenquan.TabIndex = 4;
+            this.txt_nguyenquan.TextChanged += new System.EventHandler(this.txt_luutru_TextChanged);
             // 
             // lbl_LuuTru
             // 
@@ -444,7 +445,7 @@
             this.pnl_Form.Controls.Add(this.txt_gioi_tinh);
             this.pnl_Form.Controls.Add(this.txt_diachi);
             this.pnl_Form.Controls.Add(this.lbl_LuuTru);
-            this.pnl_Form.Controls.Add(this.txt_luutru);
+            this.pnl_Form.Controls.Add(this.txt_nguyenquan);
             this.pnl_Form.Controls.Add(this.rbm_Woman);
             this.pnl_Form.Controls.Add(this.rbm_Man);
             this.pnl_Form.Controls.Add(this.lbl_name);
@@ -459,6 +460,23 @@
             this.pnl_Form.Name = "pnl_Form";
             this.pnl_Form.Size = new System.Drawing.Size(1253, 269);
             this.pnl_Form.TabIndex = 31;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ImageIndex = 3;
+            this.button1.ImageList = this.imageList1;
+            this.button1.Location = new System.Drawing.Point(1053, 157);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(173, 49);
+            this.button1.TabIndex = 108;
+            this.button1.Text = "Sửa";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btn_lammoi
             // 
@@ -550,23 +568,6 @@
             this.btn_print.UseVisualStyleBackColor = true;
             this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
             // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ImageIndex = 3;
-            this.button1.ImageList = this.imageList1;
-            this.button1.Location = new System.Drawing.Point(1053, 157);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(173, 49);
-            this.button1.TabIndex = 108;
-            this.button1.Text = "Sửa";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // SoCauAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -626,7 +627,7 @@
         private System.Windows.Forms.Label lbl_name;
         private System.Windows.Forms.RadioButton rbm_Man;
         private System.Windows.Forms.RadioButton rbm_Woman;
-        private System.Windows.Forms.TextBox txt_luutru;
+        private System.Windows.Forms.TextBox txt_nguyenquan;
         private System.Windows.Forms.Label lbl_LuuTru;
         private System.Windows.Forms.TextBox txt_diachi;
         private System.Windows.Forms.TextBox txt_gioi_tinh;

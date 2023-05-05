@@ -81,7 +81,7 @@ namespace VanPhap.View
             txt_name.Text = chubai;
             txt_nickname.Text = phapdanh;
             txt_diachi.Text = diachi;
-            txt_luutru.Text = nguyenquan;
+            txt_nguyenquan.Text = nguyenquan;
 
             string idso = txt_idchubai.Text;
             string query = "select ID, IDSo, HoTenUni, PhapDanhUni, NamNu,NamSinh,AmLich,Sao,Han from tblchitietso where idso = @idso";
@@ -158,9 +158,6 @@ namespace VanPhap.View
                 formNguoiNhan.DataFromForm11 = id;
                 formNguoiNhan.Show();
             }
-            
-
-
         }
 
 
@@ -439,7 +436,21 @@ namespace VanPhap.View
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            if (txt_name.Text.Equals(""))
+            {
+                MessageBox.Show("Chủ bái đang trống!\nVui lòng chọn || Có sớ || Chưa có sớ || để thêm chủ bái!");
+            }
+            else
+            {
+                FormUpdateChuBai frm = new FormUpdateChuBai();
 
+                frm.idso = txt_idchubai.Text;
+                frm.name = txt_name.Text;
+                frm.diachi = txt_diachi.Text;
+                frm.nguyenquan = txt_nguyenquan.Text;
+                frm.gioitinh = txt_gioi_tinh.Text;
+                frm.Show();
+            }
         }
     }
 }

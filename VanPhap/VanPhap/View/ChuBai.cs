@@ -105,7 +105,7 @@ namespace VanPhap.View
                         txt_id1.Text = id.ToString();
                         string hoten = txt_name.Text;
                         string phapdanh = txt_nickname.Text;
-                        string diachi = txt_luutru.Text;
+                        string diachi = txt_diachi.Text;
                         string nguyenquan = txt_nguyenquan.Text;
                         //double namsinh = double.Parse(txt_birthday1.Text);
 
