@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace VanPhap.View
 {
-    public partial class NguoiNhanCauSieu : Form
+    public partial class FormUpdateNguoiNhanCauSieu : Form
     {
-        public NguoiNhanCauSieu()
+        public FormUpdateNguoiNhanCauSieu()
         {
             InitializeComponent();
-            MaximizeBox= false;
+            MaximizeBox = false;
         }
     }
 }

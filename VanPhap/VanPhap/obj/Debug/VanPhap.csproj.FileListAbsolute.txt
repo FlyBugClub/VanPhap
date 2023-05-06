@@ -132,3 +132,4 @@ E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CopyComp
 E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.exe
 E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.pdb
 E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.NguoiNhanCauSieu.resources
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.FormUpdateNguoiNhanCauSieu.resources

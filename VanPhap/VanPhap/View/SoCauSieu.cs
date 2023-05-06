@@ -37,5 +37,11 @@ namespace VanPhap.View
             NguoiNhanCauSieu nncs = new NguoiNhanCauSieu();
             nncs.Show();
         }
+
+        private void btn_Update_Click(object sender, EventArgs e)
+        {
+            FormUpdateNguoiNhanCauSieu nncs = new FormUpdateNguoiNhanCauSieu();
+            nncs.Show();
+        }
     }
 }
