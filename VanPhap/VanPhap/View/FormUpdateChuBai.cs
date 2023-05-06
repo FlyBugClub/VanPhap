@@ -52,7 +52,7 @@ namespace VanPhap.View
                 rbm_Man.Checked = true;
                 txt_gioi_tinh.Text = gioitinh;
             }
-            else if (gioitinh == "Nữ")
+            else
             {
                 rbm_Woman.Checked = true;
                 txt_gioi_tinh.Text = gioitinh;
@@ -86,7 +86,7 @@ namespace VanPhap.View
             {
                 txt_gioi_tinh.Text = "1";
             }
-            else if (rbm_Woman.Checked)
+            else
             {
                 txt_gioi_tinh.Text = "2";
             }
@@ -120,24 +120,32 @@ namespace VanPhap.View
 
                         command.Parameters.AddWithValue("?", hoten);
                         command.Parameters.AddWithValue("?", phapdanh);
-                    command.Parameters.AddWithValue("?", diachi);
-                    command.Parameters.AddWithValue("?", nguyenquan);
-                    command.Parameters.AddWithValue("?", namnu);
+                        command.Parameters.AddWithValue("?", diachi);
+                        command.Parameters.AddWithValue("?", nguyenquan);
+                        command.Parameters.AddWithValue("?", namnu);
                         command.Parameters.AddWithValue("?", id);
                         
-
-
-
-
-
-
-
 
                         command.ExecuteNonQuery();
                     }
                     
                 }
             }//Dong if
+
+        private void txt_id1_TextChanged(object sender, EventArgs e)
+        {
+
         }
+
+        private void lbl_sex_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl_Form_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+    }
     }
 
