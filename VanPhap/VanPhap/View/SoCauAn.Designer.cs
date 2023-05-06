@@ -111,7 +111,7 @@
             this.pnl_List.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnl_List.Controls.Add(this.lsv_danhsach_cauan);
             this.pnl_List.Location = new System.Drawing.Point(16, 486);
-            this.pnl_List.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnl_List.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_List.Name = "pnl_List";
             this.pnl_List.Size = new System.Drawing.Size(1253, 427);
             this.pnl_List.TabIndex = 102;
@@ -235,7 +235,7 @@
             this.rdbtn_chua.AutoSize = true;
             this.rdbtn_chua.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbtn_chua.Location = new System.Drawing.Point(1037, 17);
-            this.rdbtn_chua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbtn_chua.Margin = new System.Windows.Forms.Padding(4);
             this.rdbtn_chua.Name = "rdbtn_chua";
             this.rdbtn_chua.Size = new System.Drawing.Size(187, 40);
             this.rdbtn_chua.TabIndex = 105;
@@ -251,7 +251,7 @@
             this.rdbtn_coso.AutoSize = true;
             this.rdbtn_coso.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbtn_coso.Location = new System.Drawing.Point(891, 17);
-            this.rdbtn_coso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbtn_coso.Margin = new System.Windows.Forms.Padding(4);
             this.rdbtn_coso.Name = "rdbtn_coso";
             this.rdbtn_coso.Size = new System.Drawing.Size(114, 40);
             this.rdbtn_coso.TabIndex = 106;
@@ -265,7 +265,7 @@
             this.txt_nickname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_nickname.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nickname.Location = new System.Drawing.Point(224, 103);
-            this.txt_nickname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_nickname.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nickname.Name = "txt_nickname";
             this.txt_nickname.ReadOnly = true;
             this.txt_nickname.Size = new System.Drawing.Size(343, 42);
@@ -316,7 +316,7 @@
             this.txt_name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_name.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_name.Location = new System.Drawing.Point(224, 28);
-            this.txt_name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_name.Margin = new System.Windows.Forms.Padding(4);
             this.txt_name.Name = "txt_name";
             this.txt_name.ReadOnly = true;
             this.txt_name.Size = new System.Drawing.Size(343, 42);
@@ -344,7 +344,7 @@
             this.rbm_Man.Checked = true;
             this.rbm_Man.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbm_Man.Location = new System.Drawing.Point(272, 187);
-            this.rbm_Man.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbm_Man.Margin = new System.Windows.Forms.Padding(4);
             this.rbm_Man.Name = "rbm_Man";
             this.rbm_Man.Size = new System.Drawing.Size(94, 38);
             this.rbm_Man.TabIndex = 100;
@@ -358,7 +358,7 @@
             this.rbm_Woman.AutoSize = true;
             this.rbm_Woman.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbm_Woman.Location = new System.Drawing.Point(431, 190);
-            this.rbm_Woman.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbm_Woman.Margin = new System.Windows.Forms.Padding(4);
             this.rbm_Woman.Name = "rbm_Woman";
             this.rbm_Woman.Size = new System.Drawing.Size(74, 38);
             this.rbm_Woman.TabIndex = 24;
@@ -371,7 +371,7 @@
             this.txt_nguyenquan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_nguyenquan.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nguyenquan.Location = new System.Drawing.Point(844, 103);
-            this.txt_nguyenquan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_nguyenquan.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nguyenquan.Name = "txt_nguyenquan";
             this.txt_nguyenquan.ReadOnly = true;
             this.txt_nguyenquan.Size = new System.Drawing.Size(343, 42);
@@ -396,7 +396,7 @@
             this.txt_diachi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_diachi.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_diachi.Location = new System.Drawing.Point(844, 28);
-            this.txt_diachi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_diachi.Margin = new System.Windows.Forms.Padding(4);
             this.txt_diachi.Name = "txt_diachi";
             this.txt_diachi.ReadOnly = true;
             this.txt_diachi.Size = new System.Drawing.Size(343, 42);
@@ -407,13 +407,12 @@
             // 
             this.txt_gioi_tinh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_gioi_tinh.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_gioi_tinh.Location = new System.Drawing.Point(224, 182);
-            this.txt_gioi_tinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_gioi_tinh.Location = new System.Drawing.Point(144, 182);
+            this.txt_gioi_tinh.Margin = new System.Windows.Forms.Padding(4);
             this.txt_gioi_tinh.Name = "txt_gioi_tinh";
-            this.txt_gioi_tinh.Size = new System.Drawing.Size(9, 42);
+            this.txt_gioi_tinh.Size = new System.Drawing.Size(89, 42);
             this.txt_gioi_tinh.TabIndex = 29;
             this.txt_gioi_tinh.TabStop = false;
-            this.txt_gioi_tinh.Visible = false;
             this.txt_gioi_tinh.TextChanged += new System.EventHandler(this.txt_gioi_tinh_TextChanged);
             // 
             // txt_id
@@ -421,7 +420,7 @@
             this.txt_id.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_id.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_id.Location = new System.Drawing.Point(844, 159);
-            this.txt_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_id.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(181, 42);
             this.txt_id.TabIndex = 30;
@@ -433,7 +432,7 @@
             this.txt_idchubai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_idchubai.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_idchubai.Location = new System.Drawing.Point(1035, 159);
-            this.txt_idchubai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_idchubai.Margin = new System.Windows.Forms.Padding(4);
             this.txt_idchubai.Name = "txt_idchubai";
             this.txt_idchubai.Size = new System.Drawing.Size(152, 42);
             this.txt_idchubai.TabIndex = 31;
@@ -460,7 +459,7 @@
             this.pnl_Form.Controls.Add(this.txt_nickname);
             this.pnl_Form.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnl_Form.Location = new System.Drawing.Point(16, 70);
-            this.pnl_Form.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnl_Form.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_Form.Name = "pnl_Form";
             this.pnl_Form.Size = new System.Drawing.Size(1253, 269);
             this.pnl_Form.TabIndex = 31;
@@ -472,7 +471,7 @@
             this.button1.ImageIndex = 3;
             this.button1.ImageList = this.imageList1;
             this.button1.Location = new System.Drawing.Point(892, 357);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
             this.button1.Size = new System.Drawing.Size(173, 49);
@@ -507,7 +506,7 @@
             this.btn_Delete.ImageIndex = 10;
             this.btn_Delete.ImageList = this.imageList1;
             this.btn_Delete.Location = new System.Drawing.Point(645, 926);
-            this.btn_Delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
             this.btn_Delete.Size = new System.Drawing.Size(173, 49);
@@ -524,7 +523,7 @@
             this.btn_Update.ImageIndex = 3;
             this.btn_Update.ImageList = this.imageList1;
             this.btn_Update.Location = new System.Drawing.Point(464, 926);
-            this.btn_Update.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Update.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
             this.btn_Update.Size = new System.Drawing.Size(173, 49);
@@ -590,7 +589,7 @@
             this.Controls.Add(this.pnl_List);
             this.Controls.Add(this.lbl_List);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SoCauAn";
             this.Text = "Sớ cầu an";
             this.Load += new System.EventHandler(this.SoCauAn_Load);

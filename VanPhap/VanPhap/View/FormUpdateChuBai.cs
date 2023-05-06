@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -82,7 +83,7 @@ namespace VanPhap.View
 
 
 
-            if (rbm_Man.Checked)
+           /* if (rbm_Man.Checked)
             {
                 txt_gioi_tinh.Text = "1";
             }
@@ -90,22 +91,19 @@ namespace VanPhap.View
             {
                 txt_gioi_tinh.Text = "2";
             }
-
+*/
 
             // Lấy giá trị khóa chính từ dòng đang chọn
 
                 double id = double.Parse(txt_id1.Text);
 
-                double namnu = double.Parse(txt_gioi_tinh.Text);
-                
-                
-                
+                //double namnu = double.Parse(txt_gioi_tinh.Text);
                 string hoten = txt_name.Text;
                 string phapdanh = txt_nickname.Text;
-            string nguyenquan = txt_nguyenquan.Text;
-            string diachi = txt_diachi.Text;
-                
-
+                string nguyenquan = txt_nguyenquan.Text;
+                string diachi = txt_diachi.Text;
+            try
+            {
                 using (OleDbConnection connection = new OleDbConnection(strCon))
                 {
                     connection.Open();
@@ -114,7 +112,7 @@ namespace VanPhap.View
                     // Thực hiện câu lệnh DELETE
                     // string query = "DELETE FROM tblchitietso WHERE id = @id AND idso = @idso";
                     // string query = "select ID, IDSo, HoTenUni, PhapDanhUni, NamNu,NamSinh,AmLich,Sao,Han from tblchitietso where idso = @idso";
-                    string query = "UPDATE tblphattu SET HoTenUni = ?, PhapDanhUni = ?,DiaChi = ? ,NguyenQuan = ?, NamNu = ? WHERE ID = ? ";
+                    string query = "UPDATE tblphattu SET HoTenUni = ?, PhapDanhUni = ?,DiaChiUni = ? ,NguyenQuanUni = ? WHERE ID = ? ";
                     using (OleDbCommand command = new OleDbCommand(query, connection))
                     {
 
@@ -122,14 +120,16 @@ namespace VanPhap.View
                         command.Parameters.AddWithValue("?", phapdanh);
                         command.Parameters.AddWithValue("?", diachi);
                         command.Parameters.AddWithValue("?", nguyenquan);
-                        command.Parameters.AddWithValue("?", namnu);
                         command.Parameters.AddWithValue("?", id);
-                        
+
 
                         command.ExecuteNonQuery();
                     }
-                    
+
                 }
+            }
+            catch { MessageBox.Show("Cập nhật thất bại"); }
+               
             }//Dong if
 
         private void txt_id1_TextChanged(object sender, EventArgs e)
