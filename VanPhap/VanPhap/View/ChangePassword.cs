@@ -15,6 +15,12 @@ namespace VanPhap.View
         public ChangePassword()
         {
             InitializeComponent();
+            MaximizeBox= false;
+        }
+
+        private void ChangePassword_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -42,6 +42,7 @@ namespace VanPhap.View
         public TimChuBai()
         {
             InitializeComponent();
+            MaximizeBox = false;
         }
 
         private void pnl_Form_Paint(object sender, PaintEventArgs e)

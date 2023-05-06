@@ -17,6 +17,7 @@ namespace VanPhap
         public Login()
         {
             InitializeComponent();
+            MaximizeBox = false;
         }
 
         private void Login_Load(object sender, EventArgs e)

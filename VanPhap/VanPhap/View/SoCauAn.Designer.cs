@@ -65,9 +65,9 @@
             this.pnl_Form = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_lammoi = new System.Windows.Forms.Button();
-            this.btn_Add = new System.Windows.Forms.Button();
-            this.btn_Update = new System.Windows.Forms.Button();
             this.btn_Delete = new System.Windows.Forms.Button();
+            this.btn_Update = new System.Windows.Forms.Button();
+            this.btn_Add = new System.Windows.Forms.Button();
             this.btn_print = new System.Windows.Forms.Button();
             this.pnl_List.SuspendLayout();
             this.pnl_Form.SuspendLayout();
@@ -110,17 +110,16 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnl_List.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnl_List.Controls.Add(this.lsv_danhsach_cauan);
-            this.pnl_List.Location = new System.Drawing.Point(16, 486);
+            this.pnl_List.Location = new System.Drawing.Point(15, 412);
             this.pnl_List.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_List.Name = "pnl_List";
-            this.pnl_List.Size = new System.Drawing.Size(1253, 427);
+            this.pnl_List.Size = new System.Drawing.Size(1253, 353);
             this.pnl_List.TabIndex = 102;
             // 
             // lsv_danhsach_cauan
             // 
             this.lsv_danhsach_cauan.Alignment = System.Windows.Forms.ListViewAlignment.SnapToGrid;
-            this.lsv_danhsach_cauan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.lsv_danhsach_cauan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lsv_danhsach_cauan.CheckBoxes = true;
             this.lsv_danhsach_cauan.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -138,10 +137,10 @@
             this.lsv_danhsach_cauan.FullRowSelect = true;
             this.lsv_danhsach_cauan.GridLines = true;
             this.lsv_danhsach_cauan.HideSelection = false;
-            this.lsv_danhsach_cauan.Location = new System.Drawing.Point(17, 19);
+            this.lsv_danhsach_cauan.Location = new System.Drawing.Point(0, 0);
             this.lsv_danhsach_cauan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lsv_danhsach_cauan.Name = "lsv_danhsach_cauan";
-            this.lsv_danhsach_cauan.Size = new System.Drawing.Size(1251, 420);
+            this.lsv_danhsach_cauan.Size = new System.Drawing.Size(1251, 351);
             this.lsv_danhsach_cauan.TabIndex = 103;
             this.lsv_danhsach_cauan.UseCompatibleStateImageBehavior = false;
             this.lsv_danhsach_cauan.View = System.Windows.Forms.View.Details;
@@ -220,7 +219,7 @@
             // 
             this.lbl_List.AutoSize = true;
             this.lbl_List.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_List.Location = new System.Drawing.Point(25, 434);
+            this.lbl_List.Location = new System.Drawing.Point(24, 360);
             this.lbl_List.Margin = new System.Windows.Forms.Padding(0);
             this.lbl_List.Name = "lbl_List";
             this.lbl_List.Size = new System.Drawing.Size(451, 38);
@@ -264,7 +263,7 @@
             // 
             this.txt_nickname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_nickname.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nickname.Location = new System.Drawing.Point(224, 103);
+            this.txt_nickname.Location = new System.Drawing.Point(224, 89);
             this.txt_nickname.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nickname.Name = "txt_nickname";
             this.txt_nickname.ReadOnly = true;
@@ -277,7 +276,7 @@
             this.lbl_NickName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_NickName.AutoSize = true;
             this.lbl_NickName.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_NickName.Location = new System.Drawing.Point(29, 113);
+            this.lbl_NickName.Location = new System.Drawing.Point(29, 96);
             this.lbl_NickName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_NickName.Name = "lbl_NickName";
             this.lbl_NickName.Size = new System.Drawing.Size(141, 34);
@@ -304,7 +303,7 @@
             this.lbl_sex.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_sex.AutoSize = true;
             this.lbl_sex.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_sex.Location = new System.Drawing.Point(29, 192);
+            this.lbl_sex.Location = new System.Drawing.Point(29, 157);
             this.lbl_sex.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_sex.Name = "lbl_sex";
             this.lbl_sex.Size = new System.Drawing.Size(121, 34);
@@ -343,7 +342,7 @@
             this.rbm_Man.AutoSize = true;
             this.rbm_Man.Checked = true;
             this.rbm_Man.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbm_Man.Location = new System.Drawing.Point(272, 187);
+            this.rbm_Man.Location = new System.Drawing.Point(272, 156);
             this.rbm_Man.Margin = new System.Windows.Forms.Padding(4);
             this.rbm_Man.Name = "rbm_Man";
             this.rbm_Man.Size = new System.Drawing.Size(94, 38);
@@ -357,7 +356,7 @@
             this.rbm_Woman.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.rbm_Woman.AutoSize = true;
             this.rbm_Woman.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbm_Woman.Location = new System.Drawing.Point(431, 190);
+            this.rbm_Woman.Location = new System.Drawing.Point(431, 159);
             this.rbm_Woman.Margin = new System.Windows.Forms.Padding(4);
             this.rbm_Woman.Name = "rbm_Woman";
             this.rbm_Woman.Size = new System.Drawing.Size(74, 38);
@@ -370,7 +369,7 @@
             this.txt_nguyenquan.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.txt_nguyenquan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_nguyenquan.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nguyenquan.Location = new System.Drawing.Point(844, 103);
+            this.txt_nguyenquan.Location = new System.Drawing.Point(844, 89);
             this.txt_nguyenquan.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nguyenquan.Name = "txt_nguyenquan";
             this.txt_nguyenquan.ReadOnly = true;
@@ -383,7 +382,7 @@
             this.lbl_LuuTru.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_LuuTru.AutoSize = true;
             this.lbl_LuuTru.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_LuuTru.Location = new System.Drawing.Point(632, 113);
+            this.lbl_LuuTru.Location = new System.Drawing.Point(632, 96);
             this.lbl_LuuTru.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_LuuTru.Name = "lbl_LuuTru";
             this.lbl_LuuTru.Size = new System.Drawing.Size(174, 34);
@@ -407,12 +406,13 @@
             // 
             this.txt_gioi_tinh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_gioi_tinh.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_gioi_tinh.Location = new System.Drawing.Point(144, 182);
+            this.txt_gioi_tinh.Location = new System.Drawing.Point(224, 151);
             this.txt_gioi_tinh.Margin = new System.Windows.Forms.Padding(4);
             this.txt_gioi_tinh.Name = "txt_gioi_tinh";
-            this.txt_gioi_tinh.Size = new System.Drawing.Size(89, 42);
+            this.txt_gioi_tinh.Size = new System.Drawing.Size(9, 42);
             this.txt_gioi_tinh.TabIndex = 29;
             this.txt_gioi_tinh.TabStop = false;
+            this.txt_gioi_tinh.Visible = false;
             this.txt_gioi_tinh.TextChanged += new System.EventHandler(this.txt_gioi_tinh_TextChanged);
             // 
             // txt_id
@@ -461,7 +461,7 @@
             this.pnl_Form.Location = new System.Drawing.Point(16, 70);
             this.pnl_Form.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_Form.Name = "pnl_Form";
-            this.pnl_Form.Size = new System.Drawing.Size(1253, 269);
+            this.pnl_Form.Size = new System.Drawing.Size(1253, 232);
             this.pnl_Form.TabIndex = 31;
             // 
             // button1
@@ -470,7 +470,7 @@
             this.button1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ImageIndex = 3;
             this.button1.ImageList = this.imageList1;
-            this.button1.Location = new System.Drawing.Point(892, 357);
+            this.button1.Location = new System.Drawing.Point(892, 319);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
@@ -488,7 +488,7 @@
             this.btn_lammoi.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_lammoi.ImageIndex = 7;
             this.btn_lammoi.ImageList = this.imageList1;
-            this.btn_lammoi.Location = new System.Drawing.Point(1081, 357);
+            this.btn_lammoi.Location = new System.Drawing.Point(1081, 319);
             this.btn_lammoi.Margin = new System.Windows.Forms.Padding(0);
             this.btn_lammoi.Name = "btn_lammoi";
             this.btn_lammoi.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
@@ -499,6 +499,40 @@
             this.btn_lammoi.UseVisualStyleBackColor = true;
             this.btn_lammoi.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btn_Delete
+            // 
+            this.btn_Delete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_Delete.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Delete.ImageIndex = 10;
+            this.btn_Delete.ImageList = this.imageList1;
+            this.btn_Delete.Location = new System.Drawing.Point(645, 781);
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btn_Delete.Size = new System.Drawing.Size(173, 49);
+            this.btn_Delete.TabIndex = 13;
+            this.btn_Delete.Text = "Xóa";
+            this.btn_Delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Delete.UseVisualStyleBackColor = true;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
+            // 
+            // btn_Update
+            // 
+            this.btn_Update.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_Update.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Update.ImageIndex = 3;
+            this.btn_Update.ImageList = this.imageList1;
+            this.btn_Update.Location = new System.Drawing.Point(464, 781);
+            this.btn_Update.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Update.Name = "btn_Update";
+            this.btn_Update.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btn_Update.Size = new System.Drawing.Size(173, 49);
+            this.btn_Update.TabIndex = 12;
+            this.btn_Update.Text = "Sửa";
+            this.btn_Update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Update.UseVisualStyleBackColor = true;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
+            // 
             // btn_Add
             // 
             this.btn_Add.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -506,7 +540,7 @@
             this.btn_Add.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Add.ImageKey = "add-icon.png";
             this.btn_Add.ImageList = this.imageList1;
-            this.btn_Add.Location = new System.Drawing.Point(490, 434);
+            this.btn_Add.Location = new System.Drawing.Point(287, 781);
             this.btn_Add.Margin = new System.Windows.Forms.Padding(0);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
@@ -519,40 +553,6 @@
             this.btn_Add.MouseLeave += new System.EventHandler(this.btn_Add_MouseLeave);
             this.btn_Add.MouseHover += new System.EventHandler(this.btn_Add_MouseHover);
             // 
-            // btn_Update
-            // 
-            this.btn_Update.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Update.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Update.ImageIndex = 3;
-            this.btn_Update.ImageList = this.imageList1;
-            this.btn_Update.Location = new System.Drawing.Point(667, 434);
-            this.btn_Update.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Update.Name = "btn_Update";
-            this.btn_Update.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btn_Update.Size = new System.Drawing.Size(173, 49);
-            this.btn_Update.TabIndex = 12;
-            this.btn_Update.Text = "Sửa";
-            this.btn_Update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Update.UseVisualStyleBackColor = true;
-            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
-            // 
-            // btn_Delete
-            // 
-            this.btn_Delete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Delete.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Delete.ImageIndex = 10;
-            this.btn_Delete.ImageList = this.imageList1;
-            this.btn_Delete.Location = new System.Drawing.Point(848, 434);
-            this.btn_Delete.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Delete.Name = "btn_Delete";
-            this.btn_Delete.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btn_Delete.Size = new System.Drawing.Size(173, 49);
-            this.btn_Delete.TabIndex = 13;
-            this.btn_Delete.Text = "Xóa";
-            this.btn_Delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Delete.UseVisualStyleBackColor = true;
-            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
-            // 
             // btn_print
             // 
             this.btn_print.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -560,7 +560,7 @@
             this.btn_print.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_print.ImageIndex = 9;
             this.btn_print.ImageList = this.imageList1;
-            this.btn_print.Location = new System.Drawing.Point(1026, 434);
+            this.btn_print.Location = new System.Drawing.Point(823, 781);
             this.btn_print.Margin = new System.Windows.Forms.Padding(0);
             this.btn_print.Name = "btn_print";
             this.btn_print.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
@@ -576,14 +576,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1289, 990);
-            this.Controls.Add(this.btn_print);
-            this.Controls.Add(this.btn_Add);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.btn_Update);
+            this.Controls.Add(this.btn_print);
             this.Controls.Add(this.btn_lammoi);
-            this.Controls.Add(this.btn_Delete);
             this.Controls.Add(this.rdbtn_coso);
+            this.Controls.Add(this.btn_Delete);
+            this.Controls.Add(this.btn_Update);
             this.Controls.Add(this.rdbtn_chua);
+            this.Controls.Add(this.btn_Add);
             this.Controls.Add(this.lbl_PhieuDiemThongTin);
             this.Controls.Add(this.pnl_Form);
             this.Controls.Add(this.pnl_List);
@@ -607,6 +607,9 @@
         private System.Windows.Forms.Label lbl_List;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ImageList icon;
+        private System.Windows.Forms.Button btn_Update;
+        private System.Windows.Forms.Button btn_Delete;
+        private System.Windows.Forms.Button btn_Add;
         private System.Windows.Forms.RadioButton rdbtn_chua;
         private System.Windows.Forms.RadioButton rdbtn_coso;
         private System.Windows.Forms.ListView lsv_danhsach_cauan;
@@ -636,10 +639,7 @@
         private System.Windows.Forms.TextBox txt_idchubai;
         private System.Windows.Forms.Panel pnl_Form;
         private System.Windows.Forms.ColumnHeader columnHeader10;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btn_Add;
-        private System.Windows.Forms.Button btn_Update;
-        private System.Windows.Forms.Button btn_Delete;
         private System.Windows.Forms.Button btn_print;
+        private System.Windows.Forms.Button button1;
     }
 }

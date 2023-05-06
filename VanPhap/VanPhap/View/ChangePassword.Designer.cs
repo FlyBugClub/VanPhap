@@ -29,99 +29,120 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangePassword));
-            this.txt_Password = new System.Windows.Forms.TextBox();
-            this.lbl_Password = new System.Windows.Forms.Label();
-            this.txt_Account = new System.Windows.Forms.TextBox();
-            this.lbl_old_password = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txt_matkhaumoi = new System.Windows.Forms.TextBox();
+            this.lbl_matkhaumoi = new System.Windows.Forms.Label();
+            this.txt_matkhauhientai = new System.Windows.Forms.TextBox();
+            this.lbl_matkhaucu = new System.Windows.Forms.Label();
+            this.txt_xacnhanmatkhau = new System.Windows.Forms.TextBox();
+            this.lbl_xanhnhanmatkhau = new System.Windows.Forms.Label();
+            this.btn_doimatkhau = new System.Windows.Forms.Button();
+            this.lbl_doimatkhau = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // txt_Password
+            // txt_matkhaumoi
             // 
-            this.txt_Password.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Password.Location = new System.Drawing.Point(278, 86);
-            this.txt_Password.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_Password.Name = "txt_Password";
-            this.txt_Password.Size = new System.Drawing.Size(273, 29);
-            this.txt_Password.TabIndex = 10;
-            this.txt_Password.UseSystemPasswordChar = true;
+            this.txt_matkhaumoi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_matkhaumoi.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_matkhaumoi.Location = new System.Drawing.Point(300, 155);
+            this.txt_matkhaumoi.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_matkhaumoi.Name = "txt_matkhaumoi";
+            this.txt_matkhaumoi.Size = new System.Drawing.Size(273, 42);
+            this.txt_matkhaumoi.TabIndex = 10;
+            this.txt_matkhaumoi.UseSystemPasswordChar = true;
             // 
-            // lbl_Password
+            // lbl_matkhaumoi
             // 
-            this.lbl_Password.AutoSize = true;
-            this.lbl_Password.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Password.Location = new System.Drawing.Point(73, 93);
-            this.lbl_Password.Name = "lbl_Password";
-            this.lbl_Password.Size = new System.Drawing.Size(112, 21);
-            this.lbl_Password.TabIndex = 9;
-            this.lbl_Password.Text = "Mật khẩu mới";
+            this.lbl_matkhaumoi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_matkhaumoi.AutoSize = true;
+            this.lbl_matkhaumoi.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_matkhaumoi.Location = new System.Drawing.Point(34, 159);
+            this.lbl_matkhaumoi.Name = "lbl_matkhaumoi";
+            this.lbl_matkhaumoi.Size = new System.Drawing.Size(182, 34);
+            this.lbl_matkhaumoi.TabIndex = 9;
+            this.lbl_matkhaumoi.Text = "Mật khẩu mới";
             // 
-            // txt_Account
+            // txt_matkhauhientai
             // 
-            this.txt_Account.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Account.Location = new System.Drawing.Point(278, 41);
-            this.txt_Account.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_Account.Name = "txt_Account";
-            this.txt_Account.Size = new System.Drawing.Size(273, 29);
-            this.txt_Account.TabIndex = 8;
+            this.txt_matkhauhientai.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_matkhauhientai.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_matkhauhientai.Location = new System.Drawing.Point(300, 105);
+            this.txt_matkhauhientai.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_matkhauhientai.Name = "txt_matkhauhientai";
+            this.txt_matkhauhientai.Size = new System.Drawing.Size(273, 42);
+            this.txt_matkhauhientai.TabIndex = 8;
             // 
-            // lbl_old_password
+            // lbl_matkhaucu
             // 
-            this.lbl_old_password.AutoSize = true;
-            this.lbl_old_password.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_old_password.Location = new System.Drawing.Point(73, 48);
-            this.lbl_old_password.Name = "lbl_old_password";
-            this.lbl_old_password.Size = new System.Drawing.Size(136, 21);
-            this.lbl_old_password.TabIndex = 7;
-            this.lbl_old_password.Text = "Mật khẩu hiện tại";
+            this.lbl_matkhaucu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_matkhaucu.AutoSize = true;
+            this.lbl_matkhaucu.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_matkhaucu.Location = new System.Drawing.Point(34, 109);
+            this.lbl_matkhaucu.Name = "lbl_matkhaucu";
+            this.lbl_matkhaucu.Size = new System.Drawing.Size(222, 34);
+            this.lbl_matkhaucu.TabIndex = 7;
+            this.lbl_matkhaucu.Text = "Mật khẩu hiện tại";
             // 
-            // textBox1
+            // txt_xacnhanmatkhau
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(278, 131);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(273, 29);
-            this.textBox1.TabIndex = 12;
-            this.textBox1.UseSystemPasswordChar = true;
+            this.txt_xacnhanmatkhau.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_xacnhanmatkhau.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_xacnhanmatkhau.Location = new System.Drawing.Point(300, 205);
+            this.txt_xacnhanmatkhau.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_xacnhanmatkhau.Name = "txt_xacnhanmatkhau";
+            this.txt_xacnhanmatkhau.Size = new System.Drawing.Size(273, 42);
+            this.txt_xacnhanmatkhau.TabIndex = 12;
+            this.txt_xacnhanmatkhau.UseSystemPasswordChar = true;
             // 
-            // label1
+            // lbl_xanhnhanmatkhau
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(73, 138);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 21);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Xác nhận mật khẩu ";
+            this.lbl_xanhnhanmatkhau.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_xanhnhanmatkhau.AutoSize = true;
+            this.lbl_xanhnhanmatkhau.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_xanhnhanmatkhau.Location = new System.Drawing.Point(34, 209);
+            this.lbl_xanhnhanmatkhau.Name = "lbl_xanhnhanmatkhau";
+            this.lbl_xanhnhanmatkhau.Size = new System.Drawing.Size(254, 34);
+            this.lbl_xanhnhanmatkhau.TabIndex = 11;
+            this.lbl_xanhnhanmatkhau.Text = "Xác nhận mật khẩu ";
             // 
-            // button1
+            // btn_doimatkhau
             // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(250, 194);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 40);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Đổi";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_doimatkhau.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_doimatkhau.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_doimatkhau.Location = new System.Drawing.Point(252, 274);
+            this.btn_doimatkhau.Name = "btn_doimatkhau";
+            this.btn_doimatkhau.Size = new System.Drawing.Size(145, 40);
+            this.btn_doimatkhau.TabIndex = 13;
+            this.btn_doimatkhau.Text = "Đổi";
+            this.btn_doimatkhau.UseVisualStyleBackColor = true;
+            // 
+            // lbl_doimatkhau
+            // 
+            this.lbl_doimatkhau.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_doimatkhau.AutoSize = true;
+            this.lbl_doimatkhau.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_doimatkhau.Location = new System.Drawing.Point(237, 27);
+            this.lbl_doimatkhau.Name = "lbl_doimatkhau";
+            this.lbl_doimatkhau.Size = new System.Drawing.Size(206, 37);
+            this.lbl_doimatkhau.TabIndex = 14;
+            this.lbl_doimatkhau.Text = "Đổi mật khẩu";
             // 
             // ChangePassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(617, 252);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_Password);
-            this.Controls.Add(this.lbl_Password);
-            this.Controls.Add(this.txt_Account);
-            this.Controls.Add(this.lbl_old_password);
+            this.ClientSize = new System.Drawing.Size(617, 335);
+            this.Controls.Add(this.lbl_doimatkhau);
+            this.Controls.Add(this.btn_doimatkhau);
+            this.Controls.Add(this.txt_xacnhanmatkhau);
+            this.Controls.Add(this.lbl_xanhnhanmatkhau);
+            this.Controls.Add(this.txt_matkhaumoi);
+            this.Controls.Add(this.lbl_matkhaumoi);
+            this.Controls.Add(this.txt_matkhauhientai);
+            this.Controls.Add(this.lbl_matkhaucu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ChangePassword";
             this.Text = "Đổi mật khẩu";
+            this.Load += new System.EventHandler(this.ChangePassword_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,12 +150,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txt_Password;
-        private System.Windows.Forms.Label lbl_Password;
-        private System.Windows.Forms.TextBox txt_Account;
-        private System.Windows.Forms.Label lbl_old_password;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txt_matkhaumoi;
+        private System.Windows.Forms.Label lbl_matkhaumoi;
+        private System.Windows.Forms.TextBox txt_matkhauhientai;
+        private System.Windows.Forms.Label lbl_matkhaucu;
+        private System.Windows.Forms.TextBox txt_xacnhanmatkhau;
+        private System.Windows.Forms.Label lbl_xanhnhanmatkhau;
+        private System.Windows.Forms.Button btn_doimatkhau;
+        private System.Windows.Forms.Label lbl_doimatkhau;
     }
 }

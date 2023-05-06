@@ -41,6 +41,7 @@ namespace VanPhap.View
         public ChuBai()
         {
             InitializeComponent();
+            MaximizeBox = false;
         }
 
         private void lbl_Birthday_Click(object sender, EventArgs e)

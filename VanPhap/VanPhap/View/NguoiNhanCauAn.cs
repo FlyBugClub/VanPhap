@@ -25,6 +25,7 @@ namespace VanPhap.View
         {
             InitializeComponent();
             this.formCauAn = formCauAn;
+            MaximizeBox = false;
         }
 
         public void OpenConection()
@@ -49,6 +50,7 @@ namespace VanPhap.View
         public NguoiNhanCauAn()
         {
             InitializeComponent();
+            MaximizeBox = false;
         }
 
 
