@@ -103,7 +103,7 @@ namespace VanPhap.View
                 string nguyenquan = txt_nguyenquan.Text;
                 string diachi = txt_diachi.Text;
             try
-            {
+             {
                 using (OleDbConnection connection = new OleDbConnection(strCon))
                 {
                     connection.Open();
@@ -122,7 +122,6 @@ namespace VanPhap.View
                         command.Parameters.AddWithValue("?", nguyenquan);
                         command.Parameters.AddWithValue("?", id);
 
-
                         command.ExecuteNonQuery();
                     }
 
@@ -131,7 +130,7 @@ namespace VanPhap.View
             catch { MessageBox.Show("Cập nhật thất bại"); }
                
             }//Dong if
-
+        
         private void txt_id1_TextChanged(object sender, EventArgs e)
         {
 

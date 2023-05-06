@@ -65,9 +65,9 @@
             this.pnl_Form = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_lammoi = new System.Windows.Forms.Button();
-            this.btn_Delete = new System.Windows.Forms.Button();
-            this.btn_Update = new System.Windows.Forms.Button();
             this.btn_Add = new System.Windows.Forms.Button();
+            this.btn_Update = new System.Windows.Forms.Button();
+            this.btn_Delete = new System.Windows.Forms.Button();
             this.btn_print = new System.Windows.Forms.Button();
             this.pnl_List.SuspendLayout();
             this.pnl_Form.SuspendLayout();
@@ -138,7 +138,7 @@
             this.lsv_danhsach_cauan.FullRowSelect = true;
             this.lsv_danhsach_cauan.GridLines = true;
             this.lsv_danhsach_cauan.HideSelection = false;
-            this.lsv_danhsach_cauan.Location = new System.Drawing.Point(0, 0);
+            this.lsv_danhsach_cauan.Location = new System.Drawing.Point(17, 19);
             this.lsv_danhsach_cauan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lsv_danhsach_cauan.Name = "lsv_danhsach_cauan";
             this.lsv_danhsach_cauan.Size = new System.Drawing.Size(1251, 420);
@@ -499,40 +499,6 @@
             this.btn_lammoi.UseVisualStyleBackColor = true;
             this.btn_lammoi.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btn_Delete
-            // 
-            this.btn_Delete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Delete.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Delete.ImageIndex = 10;
-            this.btn_Delete.ImageList = this.imageList1;
-            this.btn_Delete.Location = new System.Drawing.Point(645, 926);
-            this.btn_Delete.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Delete.Name = "btn_Delete";
-            this.btn_Delete.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btn_Delete.Size = new System.Drawing.Size(173, 49);
-            this.btn_Delete.TabIndex = 13;
-            this.btn_Delete.Text = "Xóa";
-            this.btn_Delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Delete.UseVisualStyleBackColor = true;
-            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
-            // 
-            // btn_Update
-            // 
-            this.btn_Update.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Update.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Update.ImageIndex = 3;
-            this.btn_Update.ImageList = this.imageList1;
-            this.btn_Update.Location = new System.Drawing.Point(464, 926);
-            this.btn_Update.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Update.Name = "btn_Update";
-            this.btn_Update.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btn_Update.Size = new System.Drawing.Size(173, 49);
-            this.btn_Update.TabIndex = 12;
-            this.btn_Update.Text = "Sửa";
-            this.btn_Update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Update.UseVisualStyleBackColor = true;
-            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
-            // 
             // btn_Add
             // 
             this.btn_Add.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -540,7 +506,7 @@
             this.btn_Add.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Add.ImageKey = "add-icon.png";
             this.btn_Add.ImageList = this.imageList1;
-            this.btn_Add.Location = new System.Drawing.Point(287, 926);
+            this.btn_Add.Location = new System.Drawing.Point(490, 434);
             this.btn_Add.Margin = new System.Windows.Forms.Padding(0);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
@@ -553,6 +519,40 @@
             this.btn_Add.MouseLeave += new System.EventHandler(this.btn_Add_MouseLeave);
             this.btn_Add.MouseHover += new System.EventHandler(this.btn_Add_MouseHover);
             // 
+            // btn_Update
+            // 
+            this.btn_Update.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_Update.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Update.ImageIndex = 3;
+            this.btn_Update.ImageList = this.imageList1;
+            this.btn_Update.Location = new System.Drawing.Point(667, 434);
+            this.btn_Update.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Update.Name = "btn_Update";
+            this.btn_Update.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btn_Update.Size = new System.Drawing.Size(173, 49);
+            this.btn_Update.TabIndex = 12;
+            this.btn_Update.Text = "Sửa";
+            this.btn_Update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Update.UseVisualStyleBackColor = true;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
+            // 
+            // btn_Delete
+            // 
+            this.btn_Delete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_Delete.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Delete.ImageIndex = 10;
+            this.btn_Delete.ImageList = this.imageList1;
+            this.btn_Delete.Location = new System.Drawing.Point(848, 434);
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btn_Delete.Size = new System.Drawing.Size(173, 49);
+            this.btn_Delete.TabIndex = 13;
+            this.btn_Delete.Text = "Xóa";
+            this.btn_Delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Delete.UseVisualStyleBackColor = true;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
+            // 
             // btn_print
             // 
             this.btn_print.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -560,7 +560,7 @@
             this.btn_print.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_print.ImageIndex = 9;
             this.btn_print.ImageList = this.imageList1;
-            this.btn_print.Location = new System.Drawing.Point(823, 926);
+            this.btn_print.Location = new System.Drawing.Point(1026, 434);
             this.btn_print.Margin = new System.Windows.Forms.Padding(0);
             this.btn_print.Name = "btn_print";
             this.btn_print.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
@@ -576,14 +576,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1289, 990);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_print);
-            this.Controls.Add(this.btn_lammoi);
-            this.Controls.Add(this.rdbtn_coso);
-            this.Controls.Add(this.btn_Delete);
-            this.Controls.Add(this.btn_Update);
-            this.Controls.Add(this.rdbtn_chua);
             this.Controls.Add(this.btn_Add);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Update);
+            this.Controls.Add(this.btn_lammoi);
+            this.Controls.Add(this.btn_Delete);
+            this.Controls.Add(this.rdbtn_coso);
+            this.Controls.Add(this.rdbtn_chua);
             this.Controls.Add(this.lbl_PhieuDiemThongTin);
             this.Controls.Add(this.pnl_Form);
             this.Controls.Add(this.pnl_List);
@@ -607,9 +607,6 @@
         private System.Windows.Forms.Label lbl_List;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ImageList icon;
-        private System.Windows.Forms.Button btn_Update;
-        private System.Windows.Forms.Button btn_Delete;
-        private System.Windows.Forms.Button btn_Add;
         private System.Windows.Forms.RadioButton rdbtn_chua;
         private System.Windows.Forms.RadioButton rdbtn_coso;
         private System.Windows.Forms.ListView lsv_danhsach_cauan;
@@ -639,7 +636,10 @@
         private System.Windows.Forms.TextBox txt_idchubai;
         private System.Windows.Forms.Panel pnl_Form;
         private System.Windows.Forms.ColumnHeader columnHeader10;
-        private System.Windows.Forms.Button btn_print;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Add;
+        private System.Windows.Forms.Button btn_Update;
+        private System.Windows.Forms.Button btn_Delete;
+        private System.Windows.Forms.Button btn_print;
     }
 }
