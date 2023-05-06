@@ -16,6 +16,7 @@ namespace VanPhap.View
         public FormUpdateNguoiNhanCauAn()
         {
             InitializeComponent();
+            MaximizeBox = false;
         }
 
 

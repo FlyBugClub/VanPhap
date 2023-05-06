@@ -266,5 +266,11 @@ namespace VanPhap
         {
 
         }
+
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangePassword c = new ChangePassword();
+            c.Show();
+        }
     } 
 }
