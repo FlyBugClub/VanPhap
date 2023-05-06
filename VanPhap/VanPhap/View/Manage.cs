@@ -24,6 +24,7 @@ namespace VanPhap
         public form_manage()
         {
             InitializeComponent();
+            MaximizeBox = false;
         }
 
         private void Form_SoThongTin_Load(object sender, EventArgs e)
@@ -271,6 +272,16 @@ namespace VanPhap
         {
             ChangePassword c = new ChangePassword();
             c.Show();
+        }
+
+        private void pnl_title_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_Title_Click(object sender, EventArgs e)
+        {
+
         }
     } 
 }

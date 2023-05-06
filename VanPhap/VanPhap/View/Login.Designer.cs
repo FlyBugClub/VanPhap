@@ -44,7 +44,7 @@
             this.lbl_Title.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Title.Location = new System.Drawing.Point(253, 18);
             this.lbl_Title.Name = "lbl_Title";
-            this.lbl_Title.Size = new System.Drawing.Size(178, 38);
+            this.lbl_Title.Size = new System.Drawing.Size(170, 37);
             this.lbl_Title.TabIndex = 0;
             this.lbl_Title.Text = "Đăng nhập";
             // 
@@ -65,7 +65,7 @@
             this.txt_Account.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_Account.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Account.Location = new System.Drawing.Point(235, 82);
-            this.txt_Account.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Account.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Account.Name = "txt_Account";
             this.txt_Account.Size = new System.Drawing.Size(273, 42);
             this.txt_Account.TabIndex = 4;
@@ -77,7 +77,7 @@
             this.txt_Password.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_Password.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Password.Location = new System.Drawing.Point(235, 132);
-            this.txt_Password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Password.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.Size = new System.Drawing.Size(273, 42);
             this.txt_Password.TabIndex = 6;
@@ -114,6 +114,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(617, 252);
             this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.txt_Password);

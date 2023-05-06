@@ -417,7 +417,7 @@
             this.lbl_PhieuDiemThongTin.Location = new System.Drawing.Point(31, 12);
             this.lbl_PhieuDiemThongTin.Margin = new System.Windows.Forms.Padding(0);
             this.lbl_PhieuDiemThongTin.Name = "lbl_PhieuDiemThongTin";
-            this.lbl_PhieuDiemThongTin.Size = new System.Drawing.Size(441, 38);
+            this.lbl_PhieuDiemThongTin.Size = new System.Drawing.Size(422, 37);
             this.lbl_PhieuDiemThongTin.TabIndex = 102;
             this.lbl_PhieuDiemThongTin.Text = "Thông tin người nhận cầu an";
             this.lbl_PhieuDiemThongTin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -442,7 +442,7 @@
             this.label1.Location = new System.Drawing.Point(33, 300);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 38);
+            this.label1.Size = new System.Drawing.Size(163, 37);
             this.label1.TabIndex = 104;
             this.label1.Text = "Danh sách";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -489,6 +489,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1074, 709);
             this.Controls.Add(this.btn_xacnhan);
             this.Controls.Add(this.label1);
@@ -498,6 +499,7 @@
             this.Controls.Add(this.pnl_Form);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormUpdateNguoiNhanCauAn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cập nhật thông tin";
             this.Load += new System.EventHandler(this.FormUpdateNguoiNhanCauAn_Load);
             this.pnl_Form.ResumeLayout(false);
