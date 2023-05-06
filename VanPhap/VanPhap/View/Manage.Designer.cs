@@ -71,8 +71,8 @@
             this.tùyChọnToolStripMenuItem});
             this.Menu.Location = new System.Drawing.Point(0, 0);
             this.Menu.Name = "Menu";
-            this.Menu.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.Menu.Size = new System.Drawing.Size(1924, 30);
+            this.Menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.Menu.Size = new System.Drawing.Size(1443, 27);
             this.Menu.TabIndex = 19;
             this.Menu.Text = "menuStrip1";
             this.Menu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.Menu_ItemClicked);
@@ -84,20 +84,20 @@
             this.thoátToolStripMenuItem2});
             this.tùyChọnToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tùyChọnToolStripMenuItem.Name = "tùyChọnToolStripMenuItem";
-            this.tùyChọnToolStripMenuItem.Size = new System.Drawing.Size(97, 26);
+            this.tùyChọnToolStripMenuItem.Size = new System.Drawing.Size(77, 23);
             this.tùyChọnToolStripMenuItem.Text = "Tùy chọn";
             // 
             // đổiMậtKhẩuToolStripMenuItem
             // 
             this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
+            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
             this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi mật khẩu";
             this.đổiMậtKhẩuToolStripMenuItem.Click += new System.EventHandler(this.đổiMậtKhẩuToolStripMenuItem_Click);
             // 
             // thoátToolStripMenuItem2
             // 
             this.thoátToolStripMenuItem2.Name = "thoátToolStripMenuItem2";
-            this.thoátToolStripMenuItem2.Size = new System.Drawing.Size(198, 26);
+            this.thoátToolStripMenuItem2.Size = new System.Drawing.Size(159, 24);
             this.thoátToolStripMenuItem2.Text = "Thoát";
             // 
             // thoátToolStripMenuItem
@@ -117,26 +117,26 @@
             // inSớToolStripMenuItem
             // 
             this.inSớToolStripMenuItem.Name = "inSớToolStripMenuItem";
-            this.inSớToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.inSớToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.inSớToolStripMenuItem.Text = "In sớ cầu an";
             this.inSớToolStripMenuItem.Click += new System.EventHandler(this.inSớToolStripMenuItem_Click);
             // 
             // inSớCầuSiêuToolStripMenuItem
             // 
             this.inSớCầuSiêuToolStripMenuItem.Name = "inSớCầuSiêuToolStripMenuItem";
-            this.inSớCầuSiêuToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.inSớCầuSiêuToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.inSớCầuSiêuToolStripMenuItem.Text = "In sớ cầu siêu";
             // 
             // tàiKhoảnToolStripMenuItem
             // 
             this.tàiKhoảnToolStripMenuItem.Name = "tàiKhoảnToolStripMenuItem";
-            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.tàiKhoảnToolStripMenuItem.Text = "Tài khoản";
             // 
             // thoátToolStripMenuItem1
             // 
             this.thoátToolStripMenuItem1.Name = "thoátToolStripMenuItem1";
-            this.thoátToolStripMenuItem1.Size = new System.Drawing.Size(197, 26);
+            this.thoátToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
             this.thoátToolStripMenuItem1.Text = "Thoát";
             // 
             // sơCầuAnToolStripMenuItem
@@ -153,14 +153,14 @@
             // sớCầuAnToolStripMenuItem
             // 
             this.sớCầuAnToolStripMenuItem.Name = "sớCầuAnToolStripMenuItem";
-            this.sớCầuAnToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
+            this.sớCầuAnToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.sớCầuAnToolStripMenuItem.Text = "Sớ cầu an";
             this.sớCầuAnToolStripMenuItem.Click += new System.EventHandler(this.sớCầuAnToolStripMenuItem_Click);
             // 
             // sớCầuSiêuToolStripMenuItem
             // 
             this.sớCầuSiêuToolStripMenuItem.Name = "sớCầuSiêuToolStripMenuItem";
-            this.sớCầuSiêuToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
+            this.sớCầuSiêuToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.sớCầuSiêuToolStripMenuItem.Text = "Sớ cầu siêu";
             this.sớCầuSiêuToolStripMenuItem.Click += new System.EventHandler(this.sớCầuSiêuToolStripMenuItem_Click);
             // 
@@ -178,7 +178,7 @@
             this.hướngDẫnSửDụngToolStripMenuItem.Image = global::VanPhap.Properties.Resources.guide_icon01;
             this.hướngDẫnSửDụngToolStripMenuItem.Name = "hướngDẫnSửDụngToolStripMenuItem";
             this.hướngDẫnSửDụngToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.hướngDẫnSửDụngToolStripMenuItem.Size = new System.Drawing.Size(272, 26);
+            this.hướngDẫnSửDụngToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.hướngDẫnSửDụngToolStripMenuItem.Text = "Hướng dẫn sử dụng";
             // 
             // imageList1
@@ -211,10 +211,10 @@
             this.pnl_Menu.Controls.Add(this.btn_SoCauAn);
             this.pnl_Menu.Controls.Add(this.pnl_Logo);
             this.pnl_Menu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl_Menu.Location = new System.Drawing.Point(0, 30);
-            this.pnl_Menu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnl_Menu.Location = new System.Drawing.Point(0, 27);
+            this.pnl_Menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_Menu.Name = "pnl_Menu";
-            this.pnl_Menu.Size = new System.Drawing.Size(272, 860);
+            this.pnl_Menu.Size = new System.Drawing.Size(204, 696);
             this.pnl_Menu.TabIndex = 31;
             // 
             // btn_SoCauSieu
@@ -224,10 +224,10 @@
             this.btn_SoCauSieu.FlatAppearance.BorderSize = 0;
             this.btn_SoCauSieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_SoCauSieu.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_SoCauSieu.Location = new System.Drawing.Point(0, 181);
-            this.btn_SoCauSieu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_SoCauSieu.Location = new System.Drawing.Point(0, 147);
+            this.btn_SoCauSieu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_SoCauSieu.Name = "btn_SoCauSieu";
-            this.btn_SoCauSieu.Size = new System.Drawing.Size(272, 60);
+            this.btn_SoCauSieu.Size = new System.Drawing.Size(204, 49);
             this.btn_SoCauSieu.TabIndex = 34;
             this.btn_SoCauSieu.Text = "Sớ cầu siêu";
             this.btn_SoCauSieu.UseVisualStyleBackColor = false;
@@ -240,10 +240,10 @@
             this.btn_SoCauAn.FlatAppearance.BorderSize = 0;
             this.btn_SoCauAn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_SoCauAn.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_SoCauAn.Location = new System.Drawing.Point(0, 121);
-            this.btn_SoCauAn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_SoCauAn.Location = new System.Drawing.Point(0, 98);
+            this.btn_SoCauAn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_SoCauAn.Name = "btn_SoCauAn";
-            this.btn_SoCauAn.Size = new System.Drawing.Size(272, 60);
+            this.btn_SoCauAn.Size = new System.Drawing.Size(204, 49);
             this.btn_SoCauAn.TabIndex = 33;
             this.btn_SoCauAn.Text = "Sớ cầu an";
             this.btn_SoCauAn.UseVisualStyleBackColor = false;
@@ -255,9 +255,9 @@
             this.pnl_Logo.Controls.Add(this.label2);
             this.pnl_Logo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Logo.Location = new System.Drawing.Point(0, 0);
-            this.pnl_Logo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnl_Logo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_Logo.Name = "pnl_Logo";
-            this.pnl_Logo.Size = new System.Drawing.Size(272, 121);
+            this.pnl_Logo.Size = new System.Drawing.Size(204, 98);
             this.pnl_Logo.TabIndex = 0;
             // 
             // label2
@@ -266,10 +266,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ImageIndex = 2;
             this.label2.ImageList = this.imageList2;
-            this.label2.Location = new System.Drawing.Point(80, 15);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(60, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 91);
+            this.label2.Size = new System.Drawing.Size(83, 73);
             this.label2.TabIndex = 0;
             this.label2.Text = "   ";
             this.label2.Click += new System.EventHandler(this.label2_Click_1);
@@ -286,35 +285,42 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(215)))), ((int)(((byte)(210)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(1652, 30);
+            this.panel1.Location = new System.Drawing.Point(1239, 27);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(272, 860);
+            this.panel1.Size = new System.Drawing.Size(204, 696);
             this.panel1.TabIndex = 35;
             // 
             // pnl_buttom
             // 
+            this.pnl_buttom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(228)))), ((int)(((byte)(226)))));
             this.pnl_buttom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnl_buttom.Location = new System.Drawing.Point(272, 793);
+            this.pnl_buttom.Location = new System.Drawing.Point(204, 644);
+            this.pnl_buttom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_buttom.Name = "pnl_buttom";
-            this.pnl_buttom.Size = new System.Drawing.Size(1380, 97);
+            this.pnl_buttom.Size = new System.Drawing.Size(1035, 79);
             this.pnl_buttom.TabIndex = 36;
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(228)))), ((int)(((byte)(226)))));
             this.panel3.Controls.Add(this.lbl_Title);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(272, 30);
+            this.panel3.Location = new System.Drawing.Point(204, 27);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1380, 120);
+            this.panel3.Size = new System.Drawing.Size(1035, 98);
             this.panel3.TabIndex = 37;
             // 
             // lbl_Title
             // 
+            this.lbl_Title.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_Title.AutoSize = true;
-            this.lbl_Title.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Title.Location = new System.Drawing.Point(585, 42);
+            this.lbl_Title.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Title.Location = new System.Drawing.Point(439, 34);
+            this.lbl_Title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Title.Name = "lbl_Title";
-            this.lbl_Title.Size = new System.Drawing.Size(147, 39);
+            this.lbl_Title.Size = new System.Drawing.Size(134, 32);
             this.lbl_Title.TabIndex = 0;
             this.lbl_Title.Text = "Pháp Vân";
             // 
@@ -322,17 +328,18 @@
             // 
             this.pnl_Component.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnl_Component.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_Component.Location = new System.Drawing.Point(272, 150);
+            this.pnl_Component.Location = new System.Drawing.Point(204, 125);
+            this.pnl_Component.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_Component.Name = "pnl_Component";
-            this.pnl_Component.Size = new System.Drawing.Size(1380, 643);
+            this.pnl_Component.Size = new System.Drawing.Size(1035, 519);
             this.pnl_Component.TabIndex = 38;
             // 
             // form_manage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1924, 890);
+            this.ClientSize = new System.Drawing.Size(1443, 723);
             this.Controls.Add(this.pnl_Component);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pnl_buttom);
@@ -341,7 +348,6 @@
             this.Controls.Add(this.Menu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.Menu;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "form_manage";
             this.Text = "Quản lý sớ cầu";

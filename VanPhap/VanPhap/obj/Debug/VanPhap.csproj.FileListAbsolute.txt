@@ -131,3 +131,4 @@ E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CoreComp
 E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.csproj.CopyComplete
 E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.exe
 E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.pdb
+E:\Projects\Pháp Vân\VanPhap\VanPhap\VanPhap\obj\Debug\VanPhap.View.NguoiNhanCauSieu.resources

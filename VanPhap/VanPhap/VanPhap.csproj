@@ -123,6 +123,12 @@
     <Compile Include="View\NguoiNhanCauAn.Designer.cs">
       <DependentUpon>NguoiNhanCauAn.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\NguoiNhanCauSieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\NguoiNhanCauSieu.Designer.cs">
+      <DependentUpon>NguoiNhanCauSieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\SoCauAn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     </Compile>
     <EmbeddedResource Include="View\NguoiNhanCauAn.resx">
       <DependentUpon>NguoiNhanCauAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NguoiNhanCauSieu.resx">
+      <DependentUpon>NguoiNhanCauSieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\SoCauAn.resx">
       <DependentUpon>SoCauAn.cs</DependentUpon>

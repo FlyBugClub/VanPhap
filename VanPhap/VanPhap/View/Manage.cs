@@ -207,7 +207,7 @@ namespace VanPhap
 
         private void btn_SoCauSieu_Click(object sender, EventArgs e)
         {
-            OpentChildForm(new View.SoCauAn(), sender);
+            OpentChildForm(new View.SoCauSieu(), sender);
             lbl_Title.Text = "SỚ CẦU SIÊU";
             Btn_Color(btn_SoCauSieu, null);
         }

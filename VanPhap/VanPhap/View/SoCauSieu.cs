@@ -32,9 +32,10 @@ namespace VanPhap.View
 
         }
 
-        private void btn_Update_Click(object sender, EventArgs e)
+        private void btn_Add_Click(object sender, EventArgs e)
         {
-
+            NguoiNhanCauSieu nncs = new NguoiNhanCauSieu();
+            nncs.Show();
         }
     }
 }
