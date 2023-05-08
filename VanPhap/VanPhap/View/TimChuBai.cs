@@ -139,7 +139,7 @@ namespace VanPhap.View
         {
 
         }
-
+        public string loaiso { get; set; }
         private void btn_tim_kiem_Click(object sender, EventArgs e)
         {
 
@@ -275,17 +275,35 @@ namespace VanPhap.View
                 form2.diachi = diachi;
                 form2.nguyenquan = nguyenquan;*/
                 //OpentChildForm(new View.SoCauAn(), null);
-                SoCauAn form2 = Application.OpenForms.OfType<SoCauAn>().FirstOrDefault();
-                if (form2 != null)
+                if (loaiso.Equals("SoCauAn"))
                 {
-                    form2.id = id;
-                    form2.chubai = chubai;
-                    form2.phapdanh = phapdanh;
-                    form2.diachi = diachi;
-                    form2.nguyenquan = nguyenquan;
-                    form2.UpdateData("Cuong");
-                    this.Close();
+                    SoCauAn form1 = Application.OpenForms.OfType<SoCauAn>().FirstOrDefault();
+                    if (form1 != null)
+                    {
+                        form1.id = id;
+                        form1.chubai = chubai;
+                        form1.phapdanh = phapdanh;
+                        form1.diachi = diachi;
+                        form1.nguyenquan = nguyenquan;
+                        form1.UpdateData("Cuong");
+                        this.Close();
+                    }
                 }
+                else
+                {
+                    SoCauSieu form2 = Application.OpenForms.OfType<SoCauSieu>().FirstOrDefault();
+                    if (form2 != null)
+                    {
+                        form2.id = id;
+                        form2.chubai = chubai;
+                        form2.phapdanh = phapdanh;
+                        form2.diachi = diachi;
+                        form2.nguyenquan = nguyenquan;
+                        
+                        this.Close();
+                    }
+                }
+                
 
 
 

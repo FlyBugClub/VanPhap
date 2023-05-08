@@ -196,11 +196,13 @@ namespace VanPhap
             childForm.BringToFront();
             childForm.Show();
         }
-       
+        public string loaiso;
+        
         private void btn_SoCauAn_Click(object sender, EventArgs e)
         {
             OpentChildForm(new View.SoCauAn(), sender);
             lbl_Title.Text = "SỚ CẦU AN";
+            loaiso = "CauAn";
             
             Btn_Color(btn_SoCauAn,null);
         }
@@ -210,6 +212,23 @@ namespace VanPhap
             OpentChildForm(new View.SoCauSieu(), sender);
             lbl_Title.Text = "SỚ CẦU SIÊU";
             Btn_Color(btn_SoCauSieu, null);
+
+            loaiso = "CauSieu";
+            
+        }
+        public void check()
+        {
+            if (loaiso.Equals("CauAn"))
+            {
+                //SoCauAn scs = Application.OpenForms.OfType<SoCauAn>().FirstOrDefault();
+                SoCauAn sca = new SoCauAn();
+                sca.loaiso = loaiso;
+            }
+            else
+            {
+                SoCauSieu scs = new SoCauSieu();
+                scs.loaiso = loaiso;
+            }
         }
 
         private void btn_account_Click(object sender, EventArgs e)

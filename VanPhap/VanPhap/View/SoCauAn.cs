@@ -43,6 +43,7 @@ namespace VanPhap.View
             }
         }
         public string id { get; set; }
+        public string loaiso { get; set; }
         public string chubai { get; set; }
         public string phapdanh { get; set; }
         public string diachi { get; set; }
@@ -63,7 +64,9 @@ namespace VanPhap.View
         {
             this.MaximizeBox = false;
             lsv_danhsach_cauan.Items.Clear();
+            txt_loaiso.Text = loaiso;
             HienDanhSach();
+            
             
             
         }
@@ -157,6 +160,9 @@ namespace VanPhap.View
                 NguoiNhanCauAn formNguoiNhan = new NguoiNhanCauAn();
                 formNguoiNhan.DataFromForm11 = id;
                 formNguoiNhan.Show();
+
+
+               
             }
         }
 
@@ -223,6 +229,7 @@ namespace VanPhap.View
         private void rdbtn_coso_Click(object sender, EventArgs e)
         {
             TimChuBai tcb = new TimChuBai();
+            tcb.loaiso = loaiso;
             tcb.Show();
         }
 
@@ -451,6 +458,11 @@ namespace VanPhap.View
                 frm.gioitinh = txt_gioi_tinh.Text;
                 frm.Show();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            txt_loaiso.Text = loaiso;
         }
     }
 }
