@@ -124,6 +124,8 @@ namespace VanPhap.View
                         command.Parameters.AddWithValue("?", id);
 
                         command.ExecuteNonQuery();
+                        MessageBox.Show("Cập nhật thành công");
+                        this.Close();
                     }
 
                 }

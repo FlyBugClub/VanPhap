@@ -37,6 +37,7 @@
             this.txt_id = new System.Windows.Forms.TextBox();
             this.txt_gioi_tinh = new System.Windows.Forms.TextBox();
             this.pnl_Form = new System.Windows.Forms.Panel();
+            this.txt_loaiso = new System.Windows.Forms.TextBox();
             this.txt_diachi = new System.Windows.Forms.TextBox();
             this.lbl_LuuTru = new System.Windows.Forms.Label();
             this.txt_nguyenquan = new System.Windows.Forms.TextBox();
@@ -72,7 +73,6 @@
             this.btn_Update = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_print = new System.Windows.Forms.Button();
-            this.txt_loaiso = new System.Windows.Forms.TextBox();
             this.pnl_Form.SuspendLayout();
             this.pnl_List.SuspendLayout();
             this.SuspendLayout();
@@ -178,6 +178,17 @@
             this.pnl_Form.Name = "pnl_Form";
             this.pnl_Form.Size = new System.Drawing.Size(1199, 232);
             this.pnl_Form.TabIndex = 113;
+            // 
+            // txt_loaiso
+            // 
+            this.txt_loaiso.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_loaiso.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_loaiso.Location = new System.Drawing.Point(588, 160);
+            this.txt_loaiso.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_loaiso.Name = "txt_loaiso";
+            this.txt_loaiso.ReadOnly = true;
+            this.txt_loaiso.Size = new System.Drawing.Size(175, 42);
+            this.txt_loaiso.TabIndex = 101;
             // 
             // txt_diachi
             // 
@@ -542,6 +553,7 @@
             this.btn_Delete.Text = "Xóa";
             this.btn_Delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Delete.UseVisualStyleBackColor = true;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // btn_Update
             // 
@@ -596,17 +608,7 @@
             this.btn_print.Text = "In sớ";
             this.btn_print.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_print.UseVisualStyleBackColor = true;
-            // 
-            // txt_loaiso
-            // 
-            this.txt_loaiso.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_loaiso.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_loaiso.Location = new System.Drawing.Point(588, 160);
-            this.txt_loaiso.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_loaiso.Name = "txt_loaiso";
-            this.txt_loaiso.ReadOnly = true;
-            this.txt_loaiso.Size = new System.Drawing.Size(175, 42);
-            this.txt_loaiso.TabIndex = 101;
+            this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
             // 
             // SoCauSieu
             // 

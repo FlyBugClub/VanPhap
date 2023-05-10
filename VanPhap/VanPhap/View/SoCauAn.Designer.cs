@@ -64,13 +64,13 @@
             this.txt_id = new System.Windows.Forms.TextBox();
             this.txt_idchubai = new System.Windows.Forms.TextBox();
             this.pnl_Form = new System.Windows.Forms.Panel();
+            this.txt_loaiso = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_lammoi = new System.Windows.Forms.Button();
             this.btn_Delete = new System.Windows.Forms.Button();
             this.btn_Update = new System.Windows.Forms.Button();
             this.btn_Add = new System.Windows.Forms.Button();
             this.btn_print = new System.Windows.Forms.Button();
-            this.txt_loaiso = new System.Windows.Forms.TextBox();
             this.pnl_List.SuspendLayout();
             this.pnl_Form.SuspendLayout();
             this.SuspendLayout();
@@ -181,41 +181,35 @@
             // 
             // columnHeader5
             // 
-            this.columnHeader5.DisplayIndex = 6;
             this.columnHeader5.Text = "Âm lịch";
             this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader5.Width = 97;
             // 
             // columnHeader6
             // 
-            this.columnHeader6.DisplayIndex = 7;
             this.columnHeader6.Text = "Sao";
             this.columnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader6.Width = 132;
             // 
             // columnHeader7
             // 
-            this.columnHeader7.DisplayIndex = 8;
             this.columnHeader7.Text = "Hạn";
             this.columnHeader7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader7.Width = 103;
             // 
             // columnHeader8
             // 
-            this.columnHeader8.DisplayIndex = 9;
             this.columnHeader8.Text = "ID";
             this.columnHeader8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // columnHeader9
             // 
-            this.columnHeader9.DisplayIndex = 10;
             this.columnHeader9.Text = "IDSo";
             this.columnHeader9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader9.Width = 115;
             // 
             // columnHeader11
             // 
-            this.columnHeader11.DisplayIndex = 5;
             this.columnHeader11.Text = "Năm mất";
             // 
             // icon
@@ -480,6 +474,17 @@
             this.pnl_Form.Size = new System.Drawing.Size(1199, 232);
             this.pnl_Form.TabIndex = 31;
             // 
+            // txt_loaiso
+            // 
+            this.txt_loaiso.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_loaiso.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_loaiso.Location = new System.Drawing.Point(667, 160);
+            this.txt_loaiso.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_loaiso.Name = "txt_loaiso";
+            this.txt_loaiso.ReadOnly = true;
+            this.txt_loaiso.Size = new System.Drawing.Size(126, 42);
+            this.txt_loaiso.TabIndex = 101;
+            // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -589,17 +594,6 @@
             this.btn_print.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_print.UseVisualStyleBackColor = true;
             this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
-            // 
-            // txt_loaiso
-            // 
-            this.txt_loaiso.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_loaiso.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_loaiso.Location = new System.Drawing.Point(667, 160);
-            this.txt_loaiso.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_loaiso.Name = "txt_loaiso";
-            this.txt_loaiso.ReadOnly = true;
-            this.txt_loaiso.Size = new System.Drawing.Size(126, 42);
-            this.txt_loaiso.TabIndex = 101;
             // 
             // SoCauAn
             // 

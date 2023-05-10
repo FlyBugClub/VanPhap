@@ -105,7 +105,7 @@ namespace VanPhap.View
                 {
 
                     int tuoiIndex = current_year - year + 1;
-                    txt_name.Text = tuoiIndex.ToString();
+                    txt_tuoiii.Text = tuoiIndex.ToString();
                     switch (tuoiIndex)
                     {
 
@@ -361,7 +361,7 @@ namespace VanPhap.View
                         {
                             double name = reader.GetDouble(0);
                             // Lấy giá trị của cột column1 (vị trí 0 trong kết quả trả về)
-
+                            
                             if (name == null)
                             {
                                 txt_id_kiemtra.Text = "";
@@ -573,7 +573,7 @@ namespace VanPhap.View
                 {
 
                     int tuoiIndex = current_year - year + 1;
-                    txt_name.Text = tuoiIndex.ToString();
+                    txt_tuoiii.Text = tuoiIndex.ToString();
                     switch (tuoiIndex)
                     {
 

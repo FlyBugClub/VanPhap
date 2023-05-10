@@ -59,7 +59,7 @@ namespace VanPhap.View
 
             txt_id_so.Text = idso;
             string idsoo = txt_id_so.Text;
-            string query = "select ID, IDSo, HoTenUni, PhapDanhUni, NamNu,NamSinh,AmLich,Sao,Han from tblchitietso where idso = @idsoo";
+            string query = "select ID, IDSo, HoTenUni, PhapDanhUni, NamNu,NamSinh,AmLich,Sao,Han from tblchitietso where idso = @idsoo AND NamMat = 0";
             //sqlCmd.CommandText = "SELECT ID, HoTenUni,  PhapDanhUni,  DiaChiUni,  NguyenQuanUni FROM tblPhatTu where HoTenUni  LIKE '%"+name+"%'";
 
 
@@ -172,7 +172,7 @@ namespace VanPhap.View
                 {
 
                     int tuoiIndex = current_year - year + 1;
-                    txt_name.Text = tuoiIndex.ToString();
+                    txt_tuoiii.Text = tuoiIndex.ToString();
                     switch (tuoiIndex)
                     {
 
@@ -388,7 +388,7 @@ namespace VanPhap.View
             }
         }
 
-        private void btn_xacnhan_Click(object sender, EventArgs e)
+      /*  private void btn_xacnhan_Click(object sender, EventArgs e)
         {
 
             {
@@ -905,7 +905,7 @@ namespace VanPhap.View
 
 
             }
-        }
+        }*/
 
     
 

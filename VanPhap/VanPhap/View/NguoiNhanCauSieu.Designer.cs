@@ -55,6 +55,7 @@
             this.rbm_Nu = new System.Windows.Forms.RadioButton();
             this.btn_xacnhan = new System.Windows.Forms.Button();
             this.btn_Add = new System.Windows.Forms.Button();
+            this.txt_tuoiii = new System.Windows.Forms.TextBox();
             this.pnl_Form.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,6 +102,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnl_Form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pnl_Form.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnl_Form.Controls.Add(this.txt_tuoiii);
             this.pnl_Form.Controls.Add(this.txt_NamMat);
             this.pnl_Form.Controls.Add(this.lbl_NamMat);
             this.pnl_Form.Controls.Add(this.txt_id_kiemtra);
@@ -272,6 +274,7 @@
             this.txt_birthday.Name = "txt_birthday";
             this.txt_birthday.Size = new System.Drawing.Size(269, 42);
             this.txt_birthday.TabIndex = 3;
+            this.txt_birthday.Leave += new System.EventHandler(this.txt_birthday_Leave);
             // 
             // txt_tuoi
             // 
@@ -403,6 +406,18 @@
             this.btn_Add.UseVisualStyleBackColor = true;
             this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
+            // txt_tuoiii
+            // 
+            this.txt_tuoiii.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_tuoiii.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tuoiii.Location = new System.Drawing.Point(455, 174);
+            this.txt_tuoiii.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_tuoiii.Name = "txt_tuoiii";
+            this.txt_tuoiii.Size = new System.Drawing.Size(12, 42);
+            this.txt_tuoiii.TabIndex = 39;
+            this.txt_tuoiii.TabStop = false;
+            this.txt_tuoiii.Visible = false;
+            // 
             // NguoiNhanCauSieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -452,5 +467,6 @@
         private System.Windows.Forms.RadioButton rbm_Nu;
         private System.Windows.Forms.TextBox txt_NamMat;
         private System.Windows.Forms.Label lbl_NamMat;
+        private System.Windows.Forms.TextBox txt_tuoiii;
     }
 }

@@ -64,11 +64,16 @@ namespace VanPhap.View
         {
             this.MaximizeBox = false;
             lsv_danhsach_cauan.Items.Clear();
-            txt_loaiso.Text = loaiso;
+            cuon();
             HienDanhSach();
+        }
+        public async Task cuon()
+        {
+            await Task.Delay(100);
+            string cuong = loaiso;
             
-            
-            
+
+            txt_loaiso.Text = cuong;
         }
 
         public void UpdateData(string data)
@@ -87,7 +92,7 @@ namespace VanPhap.View
             txt_nguyenquan.Text = nguyenquan;
 
             string idso = txt_idchubai.Text;
-            string query = "select ID, IDSo, HoTenUni, PhapDanhUni, NamNu,NamSinh,AmLich,Sao,Han from tblchitietso where idso = @idso";
+            string query = "select ID, IDSo, HoTenUni, PhapDanhUni, NamNu,NamSinh,AmLich,Sao,Han from tblchitietso where idso = @idso AND NamMat = 0;";
             //sqlCmd.CommandText = "SELECT ID, HoTenUni,  PhapDanhUni,  DiaChiUni,  NguyenQuanUni FROM tblPhatTu where HoTenUni  LIKE '%"+name+"%'";
 
 

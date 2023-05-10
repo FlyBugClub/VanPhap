@@ -1,4 +1,7 @@
-﻿using DocumentFormat.OpenXml.Office2010.Excel;
+﻿using DocumentFormat.OpenXml;
+using DocumentFormat.OpenXml.Office2010.Excel;
+using DocumentFormat.OpenXml.Packaging;
+using DocumentFormat.OpenXml.Wordprocessing;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -41,12 +44,25 @@ namespace VanPhap.View
             InitializeComponent();
         }
 
-        private void SoCauSieu_Load(object sender, EventArgs e)
+        private async void SoCauSieu_Load(object sender, EventArgs e)
         {
             this.MaximizeBox = false;
-            txt_loaiso.Text = loaiso;
-        }
+            cuon();
+            HienDanhSach();
+            
 
+        }
+        public void UpdateData(string data)
+        {
+            lsv_danhsach_causieu.Items.Clear();
+            HienDanhSach();
+        }
+        public async Task cuon()
+        {
+            await Task.Delay(100);
+            string cuong = loaiso;
+            txt_loaiso.Text = cuong;
+        }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -128,6 +144,7 @@ namespace VanPhap.View
 
         public void HienDanhSach()
         {
+            
             lsv_danhsach_causieu.Items.Clear();
 
             txt_idchubai.Text = id;
@@ -137,7 +154,7 @@ namespace VanPhap.View
             txt_nguyenquan.Text = nguyenquan;
 
             string idso = txt_idchubai.Text;
-            string query = "select ID, IDSo, HoTenUni, PhapDanhUni, NamNu,NamSinh,NamMat,AmLich,Sao,Han from tblchitietso where idso = @idso";
+            string query = "select ID, IDSo, HoTenUni, PhapDanhUni, NamNu,NamSinh,NamMat,AmLich,Sao,Han from tblchitietso where idso = @idso AND NamMat <> 0";
             //sqlCmd.CommandText = "SELECT ID, HoTenUni,  PhapDanhUni,  DiaChiUni,  NguyenQuanUni FROM tblPhatTu where HoTenUni  LIKE '%"+name+"%'";
 
 
@@ -158,14 +175,16 @@ namespace VanPhap.View
                         string amlich = reader.GetString(4);
                         string sao = reader.GetString(5);
                         string han = reader.GetString(6);*/
+                        
 
                         ListViewItem lvi = new ListViewItem();
 
                         lvi.SubItems.Add(reader["HoTenUni"].ToString());
                         lvi.SubItems.Add(reader["PhapDanhUni"].ToString());
                         lvi.SubItems.Add(reader["NamNu"].ToString());
-                        lvi.SubItems.Add(reader["NamMat"].ToString());
+                        
                         lvi.SubItems.Add(reader["NamSinh"].ToString());
+                        lvi.SubItems.Add(reader["NamMat"].ToString());
                         lvi.SubItems.Add(reader["AmLich"].ToString());
                         lvi.SubItems.Add(reader["Sao"].ToString());
                         lvi.SubItems.Add(reader["Han"].ToString());
@@ -209,6 +228,143 @@ namespace VanPhap.View
             TimChuBai tcb = new TimChuBai();
             tcb.loaiso = loaiso;
             tcb.Show();
+        }
+
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
+            if (txt_name.Text.Equals(""))
+            {
+                MessageBox.Show("Chủ bái đang trống!\nVui lòng chọn || Có sớ || Chưa có sớ || để thêm chủ bái!");
+
+            }
+            else
+            {
+
+                if (lsv_danhsach_causieu.SelectedItems.Count > 0)
+                {
+                    // Lấy giá trị khóa chính từ dòng đang chọn
+
+                    string id = lsv_danhsach_causieu.SelectedItems[0].SubItems[9].Text; // Giả sử khóa chính ở cột đầu tiên
+                    string idso = lsv_danhsach_causieu.SelectedItems[0].SubItems[10].Text;
+
+                    using (OleDbConnection connection = new OleDbConnection(strCon))
+                    {
+                        connection.Open();
+
+
+                        // Thực hiện câu lệnh DELETE
+                        string query = "DELETE FROM tblchitietso WHERE id = @id AND idso = @idso";
+
+                        using (OleDbCommand command = new OleDbCommand(query, connection))
+                        {
+                            command.Parameters.AddWithValue("@id", id);
+                            command.Parameters.AddWithValue("@idso", idso);
+                            command.ExecuteNonQuery();
+                        }
+                        if (lsv_danhsach_causieu.SelectedItems.Count > 0)
+                        {
+                            // Xóa thành công
+                            MessageBox.Show("Xóa thành công");
+                            HienDanhSach();
+                        }
+                        else
+                        {
+                            // Không có dòng nào được xóa
+                            MessageBox.Show("Không có dòng nào được xóa");
+                        }
+                    }
+                }//Dong if
+                else
+                {
+                    MessageBox.Show("Vui lòng chọn một người bên dưới để xóa!");
+
+                }
+
+            }
+        }
+
+        private void btn_print_Click(object sender, EventArgs e)
+        {
+
+            {
+                List<string> user = new List<string>();
+                List<List<string>> ls = new List<List<string>>();
+                int count = 0;
+
+                /*  lsv_danhsach_cauan.SelectedIndexChanged += lsv_danhsach_cauan_SelectedIndexChanged;
+                  if (lsv_danhsach_cauan.SelectedItems.Count > 0)
+                  {
+                      // Xử lý lựa chọn dòng được chọn
+                      ListViewItem selectedItem = lsv_danhsach_cauan.SelectedItems[0];
+                      string name = selectedItem.SubItems[1].Text; // Lấy giá trị của cột
+                      txt_id.Text = name;
+                  }*/
+                foreach (ListViewItem item in lsv_danhsach_causieu.Items)
+                {
+                    if (item.Checked)
+                    {
+                        ls.Add(new List<string>());
+                    }
+
+                }
+                foreach (ListViewItem item in lsv_danhsach_causieu.Items)
+                {
+                    if (item.Checked)
+                    {
+                        ls[count].Add(item.SubItems[1].Text);
+                        ls[count].Add(item.SubItems[2].Text);
+                        ls[count].Add(item.SubItems[3].Text);
+                        ls[count].Add(item.SubItems[4].Text);
+                        ls[count].Add(item.SubItems[5].Text);
+                        ls[count].Add(item.SubItems[6].Text);
+                        ls[count].Add(item.SubItems[7].Text);
+                        ls[count].Add(item.SubItems[8].Text);
+
+                        count++;
+                    }
+                }
+                try
+                {
+                    string filePath = "D:/file.docx";
+                    using (WordprocessingDocument wordDocument = WordprocessingDocument.Create(filePath, WordprocessingDocumentType.Document))
+                    {
+                        // Add a main document part
+                        MainDocumentPart mainPart = wordDocument.AddMainDocumentPart();
+                        // Create a new document tree
+
+                        mainPart.Document = new Document();
+                        // Create a body for the document
+
+                        DocumentFormat.OpenXml.Wordprocessing.Body body = new DocumentFormat.OpenXml.Wordprocessing.Body();
+
+                        // Add a paragraph to the body
+                        Paragraph paragraph = new Paragraph();
+                        Run run = new Run();
+
+                        foreach (List<string> sublist in ls)
+                        {
+                            foreach (string subitem in sublist)
+                            {
+                                run.Append(new Text(subitem + "\n"));
+                            }
+                            run.Append(new Break());
+                        }
+                        paragraph.Append(run);
+                        body.Append(paragraph);
+
+                        // Add the body to the document
+                        mainPart.Document.Append(body);
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+
+                }
+
+
+            }
         }
     }
 }

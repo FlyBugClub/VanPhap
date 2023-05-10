@@ -137,7 +137,7 @@ namespace VanPhap.View
 
         private void btn_huy_bo_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
         public string loaiso { get; set; }
         private void btn_tim_kiem_Click(object sender, EventArgs e)
@@ -275,7 +275,7 @@ namespace VanPhap.View
                 form2.diachi = diachi;
                 form2.nguyenquan = nguyenquan;*/
                 //OpentChildForm(new View.SoCauAn(), null);
-                if (loaiso.Equals("SoCauAn"))
+                if (loaiso.Equals("CauAn"))
                 {
                     SoCauAn form1 = Application.OpenForms.OfType<SoCauAn>().FirstOrDefault();
                     if (form1 != null)
@@ -299,7 +299,7 @@ namespace VanPhap.View
                         form2.phapdanh = phapdanh;
                         form2.diachi = diachi;
                         form2.nguyenquan = nguyenquan;
-                        
+                        form2.UpdateData("Cuong");
                         this.Close();
                     }
                 }

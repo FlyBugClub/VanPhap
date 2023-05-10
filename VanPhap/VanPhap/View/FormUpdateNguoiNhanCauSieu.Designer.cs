@@ -32,11 +32,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUpdateNguoiNhanCauSieu));
             this.lbl_danhsach = new System.Windows.Forms.Label();
             this.pnl_list = new System.Windows.Forms.Panel();
-            this.lsv_danhsach_cauan = new System.Windows.Forms.ListView();
+            this.lsv_danhsach_causieu = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -46,6 +47,7 @@
             this.txt_update = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pnl_Form = new System.Windows.Forms.Panel();
+            this.txt_tuoiii = new System.Windows.Forms.TextBox();
             this.lbl_NamMat = new System.Windows.Forms.Label();
             this.txt_NamMat = new System.Windows.Forms.TextBox();
             this.lbl_name = new System.Windows.Forms.Label();
@@ -69,7 +71,6 @@
             this.txt_gioi_tinh_1 = new System.Windows.Forms.TextBox();
             this.rbm_Nam = new System.Windows.Forms.RadioButton();
             this.btn_xacnhan = new System.Windows.Forms.Button();
-            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pnl_list.SuspendLayout();
             this.pnl_Form.SuspendLayout();
             this.SuspendLayout();
@@ -92,41 +93,43 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnl_list.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnl_list.Controls.Add(this.lsv_danhsach_cauan);
+            this.pnl_list.Controls.Add(this.lsv_danhsach_causieu);
             this.pnl_list.Location = new System.Drawing.Point(23, 382);
             this.pnl_list.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_list.Name = "pnl_list";
             this.pnl_list.Size = new System.Drawing.Size(1029, 307);
             this.pnl_list.TabIndex = 109;
             // 
-            // lsv_danhsach_cauan
+            // lsv_danhsach_causieu
             // 
-            this.lsv_danhsach_cauan.Alignment = System.Windows.Forms.ListViewAlignment.SnapToGrid;
-            this.lsv_danhsach_cauan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lsv_danhsach_causieu.Alignment = System.Windows.Forms.ListViewAlignment.SnapToGrid;
+            this.lsv_danhsach_causieu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lsv_danhsach_cauan.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lsv_danhsach_causieu.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
+            this.columnHeader10,
             this.columnHeader5,
             this.columnHeader6,
             this.columnHeader7,
             this.columnHeader8,
-            this.columnHeader9,
-            this.columnHeader10});
-            this.lsv_danhsach_cauan.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lsv_danhsach_cauan.FullRowSelect = true;
-            this.lsv_danhsach_cauan.GridLines = true;
-            this.lsv_danhsach_cauan.HideSelection = false;
-            this.lsv_danhsach_cauan.Location = new System.Drawing.Point(-3, -2);
-            this.lsv_danhsach_cauan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lsv_danhsach_cauan.Name = "lsv_danhsach_cauan";
-            this.lsv_danhsach_cauan.Size = new System.Drawing.Size(1030, 307);
-            this.lsv_danhsach_cauan.TabIndex = 23;
-            this.lsv_danhsach_cauan.UseCompatibleStateImageBehavior = false;
-            this.lsv_danhsach_cauan.View = System.Windows.Forms.View.Details;
+            this.columnHeader9});
+            this.lsv_danhsach_causieu.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lsv_danhsach_causieu.FullRowSelect = true;
+            this.lsv_danhsach_causieu.GridLines = true;
+            this.lsv_danhsach_causieu.HideSelection = false;
+            this.lsv_danhsach_causieu.Location = new System.Drawing.Point(-2, 2);
+            this.lsv_danhsach_causieu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lsv_danhsach_causieu.Name = "lsv_danhsach_causieu";
+            this.lsv_danhsach_causieu.Size = new System.Drawing.Size(1030, 307);
+            this.lsv_danhsach_causieu.TabIndex = 23;
+            this.lsv_danhsach_causieu.UseCompatibleStateImageBehavior = false;
+            this.lsv_danhsach_causieu.View = System.Windows.Forms.View.Details;
+            this.lsv_danhsach_causieu.ItemActivate += new System.EventHandler(this.lsv_danhsach_causieu_ItemActivate);
+            this.lsv_danhsach_causieu.SelectedIndexChanged += new System.EventHandler(this.lsv_danhsach_causieu_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -148,6 +151,11 @@
             this.columnHeader4.Text = "Năm sinh";
             this.columnHeader4.Width = 148;
             // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "Năm mất";
+            this.columnHeader10.Width = 131;
+            // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "Âm lịch";
@@ -155,24 +163,20 @@
             // 
             // columnHeader6
             // 
-            this.columnHeader6.DisplayIndex = 6;
             this.columnHeader6.Text = "Sao";
             this.columnHeader6.Width = 132;
             // 
             // columnHeader7
             // 
-            this.columnHeader7.DisplayIndex = 7;
             this.columnHeader7.Text = "Hạn";
             this.columnHeader7.Width = 103;
             // 
             // columnHeader8
             // 
-            this.columnHeader8.DisplayIndex = 8;
             this.columnHeader8.Text = "ID";
             // 
             // columnHeader9
             // 
-            this.columnHeader9.DisplayIndex = 9;
             this.columnHeader9.Text = "IDSo";
             // 
             // lbl_PhieuDiemThongTin
@@ -182,9 +186,9 @@
             this.lbl_PhieuDiemThongTin.Location = new System.Drawing.Point(31, 12);
             this.lbl_PhieuDiemThongTin.Margin = new System.Windows.Forms.Padding(0);
             this.lbl_PhieuDiemThongTin.Name = "lbl_PhieuDiemThongTin";
-            this.lbl_PhieuDiemThongTin.Size = new System.Drawing.Size(422, 37);
+            this.lbl_PhieuDiemThongTin.Size = new System.Drawing.Size(443, 37);
             this.lbl_PhieuDiemThongTin.TabIndex = 108;
-            this.lbl_PhieuDiemThongTin.Text = "Thông tin người nhận cầu an";
+            this.lbl_PhieuDiemThongTin.Text = "Thông tin người nhận cầu siêu";
             this.lbl_PhieuDiemThongTin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txt_update
@@ -221,6 +225,7 @@
             // 
             this.pnl_Form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pnl_Form.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnl_Form.Controls.Add(this.txt_tuoiii);
             this.pnl_Form.Controls.Add(this.lbl_NamMat);
             this.pnl_Form.Controls.Add(this.txt_NamMat);
             this.pnl_Form.Controls.Add(this.lbl_name);
@@ -248,6 +253,15 @@
             this.pnl_Form.Name = "pnl_Form";
             this.pnl_Form.Size = new System.Drawing.Size(845, 270);
             this.pnl_Form.TabIndex = 107;
+            // 
+            // txt_tuoiii
+            // 
+            this.txt_tuoiii.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tuoiii.Location = new System.Drawing.Point(519, 219);
+            this.txt_tuoiii.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_tuoiii.Name = "txt_tuoiii";
+            this.txt_tuoiii.Size = new System.Drawing.Size(87, 42);
+            this.txt_tuoiii.TabIndex = 66;
             // 
             // lbl_NamMat
             // 
@@ -427,6 +441,7 @@
             this.txt_birthday.Name = "txt_birthday";
             this.txt_birthday.Size = new System.Drawing.Size(271, 42);
             this.txt_birthday.TabIndex = 3;
+            this.txt_birthday.Leave += new System.EventHandler(this.txt_birthday_Leave);
             // 
             // txt_han
             // 
@@ -512,13 +527,6 @@
             this.btn_xacnhan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_xacnhan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_xacnhan.UseVisualStyleBackColor = true;
-            this.btn_xacnhan.Click += new System.EventHandler(this.btn_xacnhan_Click);
-            // 
-            // columnHeader10
-            // 
-            this.columnHeader10.DisplayIndex = 4;
-            this.columnHeader10.Text = "Năm mất";
-            this.columnHeader10.Width = 131;
             // 
             // FormUpdateNguoiNhanCauSieu
             // 
@@ -537,6 +545,7 @@
             this.Name = "FormUpdateNguoiNhanCauSieu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cập nhật thông tin người nhận cầu siêu";
+            this.Load += new System.EventHandler(this.FormUpdateNguoiNhanCauSieu_Load);
             this.pnl_list.ResumeLayout(false);
             this.pnl_Form.ResumeLayout(false);
             this.pnl_Form.PerformLayout();
@@ -549,7 +558,7 @@
 
         private System.Windows.Forms.Label lbl_danhsach;
         private System.Windows.Forms.Panel pnl_list;
-        private System.Windows.Forms.ListView lsv_danhsach_cauan;
+        private System.Windows.Forms.ListView lsv_danhsach_causieu;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
@@ -587,5 +596,6 @@
         private System.Windows.Forms.Label lbl_NamMat;
         private System.Windows.Forms.TextBox txt_NamMat;
         private System.Windows.Forms.ColumnHeader columnHeader10;
+        private System.Windows.Forms.TextBox txt_tuoiii;
     }
 }

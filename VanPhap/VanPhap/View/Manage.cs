@@ -35,6 +35,9 @@ namespace VanPhap
             lbl_Title.Text = "SỚ CẦU AN";
             Btn_Color(btn_SoCauAn, null);
             this.MaximizeBox= true;
+            loaiso = "CauAn";
+            SoCauAn sca = Application.OpenForms.OfType<SoCauAn>().FirstOrDefault();
+            sca.loaiso = loaiso;
             //FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
 
@@ -202,9 +205,12 @@ namespace VanPhap
         {
             OpentChildForm(new View.SoCauAn(), sender);
             lbl_Title.Text = "SỚ CẦU AN";
+            Btn_Color(btn_SoCauAn, null);
             loaiso = "CauAn";
+            SoCauAn sca = Application.OpenForms.OfType<SoCauAn>().FirstOrDefault();
+            sca.loaiso = loaiso;
+
             
-            Btn_Color(btn_SoCauAn,null);
         }
 
         private void btn_SoCauSieu_Click(object sender, EventArgs e)
@@ -212,22 +218,23 @@ namespace VanPhap
             OpentChildForm(new View.SoCauSieu(), sender);
             lbl_Title.Text = "SỚ CẦU SIÊU";
             Btn_Color(btn_SoCauSieu, null);
-
+            SoCauSieu form2 = Application.OpenForms.OfType<SoCauSieu>().FirstOrDefault();
             loaiso = "CauSieu";
-            
+            form2.loaiso = loaiso;
+         
+
+
         }
         public void check()
         {
             if (loaiso.Equals("CauAn"))
             {
                 //SoCauAn scs = Application.OpenForms.OfType<SoCauAn>().FirstOrDefault();
-                SoCauAn sca = new SoCauAn();
-                sca.loaiso = loaiso;
+                
             }
             else
             {
-                SoCauSieu scs = new SoCauSieu();
-                scs.loaiso = loaiso;
+               
             }
         }
 
