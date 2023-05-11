@@ -15,6 +15,8 @@ using VanPhap.Controller;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using ListView = System.Windows.Forms.ListView;
 using Color = System.Drawing.Color;
+using System.Diagnostics;
+using System.IO;
 
 namespace VanPhap.View
 {
@@ -366,83 +368,268 @@ namespace VanPhap.View
 
         }
 
+        /* public void btn_print_Click(object sender, EventArgs e)
+         {
+                 List<string> user = new List<string>();
+                 List<List<string>> ls = new List<List<string>>();
+                 int count = 0;
+
+                 *//*  lsv_danhsach_cauan.SelectedIndexChanged += lsv_danhsach_cauan_SelectedIndexChanged;
+                   if (lsv_danhsach_cauan.SelectedItems.Count > 0)
+                   {
+                       // Xử lý lựa chọn dòng được chọn
+                       ListViewItem selectedItem = lsv_danhsach_cauan.SelectedItems[0];
+                       string name = selectedItem.SubItems[1].Text; // Lấy giá trị của cột
+                       txt_id.Text = name;
+                   }*//*
+                 foreach (ListViewItem item in lsv_danhsach_cauan.Items)
+                 {
+                     if (item.Checked)
+                     {
+                         ls.Add(new List<string>());
+                     }
+
+                 }
+                 foreach (ListViewItem item in lsv_danhsach_cauan.Items)
+                 {
+                     if (item.Checked)
+                     {
+                         ls[count].Add(item.SubItems[1].Text);
+                         ls[count].Add(item.SubItems[2].Text);
+                         ls[count].Add(item.SubItems[3].Text);
+                         ls[count].Add(item.SubItems[4].Text);
+                         ls[count].Add(item.SubItems[5].Text);
+                         ls[count].Add(item.SubItems[6].Text);
+                         ls[count].Add(item.SubItems[7].Text);
+
+                         count++;
+                     }
+                 }
+                 try
+                 {
+                     string filePath = "D:/file.docx";
+                     using (WordprocessingDocument wordDocument = WordprocessingDocument.Create(filePath, WordprocessingDocumentType.Document))
+                     {
+                         // Add a main document part
+                         MainDocumentPart mainPart = wordDocument.AddMainDocumentPart();
+                         // Create a new document tree
+
+                         mainPart.Document = new Document();
+                         // Create a body for the document
+
+                         DocumentFormat.OpenXml.Wordprocessing.Body body = new DocumentFormat.OpenXml.Wordprocessing.Body();
+
+                         // Add a paragraph to the body
+                         Paragraph paragraph = new Paragraph();
+                         Run run = new Run();
+
+                         foreach (List<string> sublist in ls)
+                         {
+                             foreach (string subitem in sublist)
+                             {
+                                 run.Append(new Text(subitem + "\n"));
+                             }
+                             run.Append(new Break());
+                         }
+                         paragraph.Append(run);
+                         body.Append(paragraph);
+
+                         // Add the body to the document
+                         mainPart.Document.Append(body);
+
+                     }
+                 }
+                 catch (Exception ex)
+                 {
+                     MessageBox.Show(ex.ToString());
+
+                 }
+
+
+         }
+ */
+        public class ChuBai1
+        {
+            public String Chubai { get; set; }
+            public String Phapdanh { get; set; }
+            public String NguyenQuan { get; set; }
+            public String DiaChi { get; set; }
+        }
+
+
         public void btn_print_Click(object sender, EventArgs e)
         {
-                List<string> user = new List<string>();
-                List<List<string>> ls = new List<List<string>>();
-                int count = 0;
+            List<string> user = new List<string>();
+            List<List<string>> ls = new List<List<string>>();
+            int count = 0;
 
-                /*  lsv_danhsach_cauan.SelectedIndexChanged += lsv_danhsach_cauan_SelectedIndexChanged;
-                  if (lsv_danhsach_cauan.SelectedItems.Count > 0)
-                  {
-                      // Xử lý lựa chọn dòng được chọn
-                      ListViewItem selectedItem = lsv_danhsach_cauan.SelectedItems[0];
-                      string name = selectedItem.SubItems[1].Text; // Lấy giá trị của cột
-                      txt_id.Text = name;
-                  }*/
-                foreach (ListViewItem item in lsv_danhsach_cauan.Items)
+
+            ChuBai1 chu = new ChuBai1();
+            {
+                chu.Chubai = txt_name.Text;
+                chu.Phapdanh = txt_nickname.Text;
+                chu.DiaChi = txt_diachi.Text;
+                chu.NguyenQuan = txt_nguyenquan.Text;
+            }
+
+
+
+            /*  lsv_danhsach_cauan.SelectedIndexChanged += lsv_danhsach_cauan_SelectedIndexChanged;
+              if (lsv_danhsach_cauan.SelectedItems.Count > 0)
+              {
+                  // Xử lý lựa chọn dòng được chọn
+                  ListViewItem selectedItem = lsv_danhsach_cauan.SelectedItems[0];
+                  string name = selectedItem.SubItems[1].Text; // Lấy giá trị của cột
+                  txt_id.Text = name;
+              }*/
+
+            foreach (ListViewItem item in lsv_danhsach_cauan.Items)
+            {
+                if (item.Checked)
                 {
-                    if (item.Checked)
+                    ls.Add(new List<string>());
+                }
+
+            }
+            foreach (ListViewItem item in lsv_danhsach_cauan.Items)
+            {
+
+                if (item.Checked)
+                {
+                    string kiemTra = item.SubItems[3].Text;//gioi tinh
+                    if (kiemTra.Equals("1"))
                     {
-                        ls.Add(new List<string>());
+                        ls[count].Add("X");
+                        ls[count].Add("");
+                        ls[count].Add(item.SubItems[1].Text); //name
+                        ls[count].Add(item.SubItems[2].Text); // phapdanh
+                        ls[count].Add(item.SubItems[4].Text);//nam sinh
+                        ls[count].Add(item.SubItems[5].Text);//tuoi
+                        ls[count].Add(item.SubItems[6].Text);//sao
+                        ls[count].Add(item.SubItems[7].Text);//han
+                    }
+                    else
+                    {
+                        ls[count].Add("");
+                        ls[count].Add("X");
+                        ls[count].Add(item.SubItems[1].Text); //name
+                        ls[count].Add(item.SubItems[2].Text); // phapdanh
+                        ls[count].Add(item.SubItems[4].Text);//nam sinh
+                        ls[count].Add(item.SubItems[5].Text);//tuoi
+                        ls[count].Add(item.SubItems[6].Text);//sao
+                        ls[count].Add(item.SubItems[7].Text);//han
                     }
 
+
+
+                    count++;
                 }
-                foreach (ListViewItem item in lsv_danhsach_cauan.Items)
+            }
+
+            try
+            {
+                // tạo tệp mới
+                string path = @"C:\Git\test.html";
+                File.Create(path).Close();
+                using (StreamWriter sw = new StreamWriter(path))
                 {
-                    if (item.Checked)
+                    sw.WriteLine("<html><head><title>So cau an</title></head>");
+                    sw.WriteLine("<body>");
+                    sw.WriteLine("<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"1000\">");
+                    sw.WriteLine("<tbody><tr>");
+                    sw.WriteLine("<td width=\"998\" colspan=\"3\" height=\"60\">");
+                    sw.WriteLine("<p align=\"center\"><b><font size=\"5\" face=\"VNI-Cooper\">DAÂNG LEÃ CAÀU AN</font></b></p>");
+                    sw.WriteLine("</td>");
+                    sw.WriteLine("</tr>");
+                    sw.WriteLine("<tr>");
+                    sw.WriteLine("<td width=\"265\"></td>");
+                    sw.WriteLine("<td width=\"124\">");
+                    sw.WriteLine("<p style=\"line-height: 150%; margin-bottom: 0\"><b><font size=\"3\" face=\"vni-times\"><i>Chuû baùi&nbsp;</i></font></b></p>");
+                    sw.WriteLine("</td>");
+                    sw.WriteLine("<td width=\"605\">");
+                    sw.WriteLine("<p style=\"line-height: 100%; margin-bottom: 0\"><b>: " + chu.Chubai + "");
+                    sw.WriteLine("<font face=\"VNI-Times\" size=\"2\"><span style=\"text-transform: uppercase\">");
+                    sw.WriteLine("</span></font></b></p>");
+                    sw.WriteLine("</td>");
+                    sw.WriteLine("</tr>");
+                    sw.WriteLine("<tr>");
+                    sw.WriteLine("<td width=\"265\"></td>");
+                    sw.WriteLine("<td width=\"124\">");
+                    sw.WriteLine("<p style=\"line-height: 150%; margin-bottom: 0\"><b><font size=\"3\" face=\"vni-times\"><i>Phaùp danh&nbsp;</i></font></b></p>");
+                    sw.WriteLine("</td>");
+                    sw.WriteLine("<td width=\"605\"><p style=\"line-height: 100%; margin-bottom: 0\"><b>: " + chu.Phapdanh + "");
+                    sw.WriteLine("</b></p>");
+                    sw.WriteLine("</td>");
+                    sw.WriteLine("</tr>");
+                    sw.WriteLine("<tr>");
+                    sw.WriteLine("<td width=\"265\"></td>");
+                    sw.WriteLine("<td width=\"124\">");
+                    sw.WriteLine("<p style=\"line-height: 150%; margin-bottom: 0\"><b><font size=\"3\" face=\"vni-times\"><i>Nguyeân quaùn</i></font></b></p>");
+                    sw.WriteLine("</td>");
+                    sw.WriteLine("<td width=\"605\">");
+                    sw.WriteLine("<p style=\"line-height: 100%; margin-bottom: 0\"><b>: " + chu.NguyenQuan + "");
+                    sw.WriteLine("</b></p>");
+                    sw.WriteLine("</td>");
+                    sw.WriteLine("</tr>");
+                    sw.WriteLine("<tr>");
+                    sw.WriteLine("<td width=\"265\"></td>");
+                    sw.WriteLine("<td width=\"124\">");
+                    sw.WriteLine("<p style=\"line-height: 150%; margin-bottom: 0\"><b><font size=\"3\" face=\"vni-times\"><i>Ñòa chæ</i></font></b></p>");
+                    sw.WriteLine("</td>");
+                    sw.WriteLine("<td width=\"605\">");
+                    sw.WriteLine("<p style=\"line - height: 100 %; margin - bottom: 0\"><b>: " + chu.DiaChi + "");
+                    sw.WriteLine("</b></p>");
+                    sw.WriteLine("</td>");
+                    sw.WriteLine("</tr>");
+                    sw.WriteLine("<tr>");
+                    sw.WriteLine("<td width=\"265\"><b><font size=\"3\" face=\"vni-times\"><i>&nbsp;</i></font></b></td>");
+                    sw.WriteLine("<td width=\"124\">");
+                    sw.WriteLine("</td>");
+                    sw.WriteLine("<td width=\"605\">");
+                    sw.WriteLine("</td>");
+                    sw.WriteLine("</tr></tbody></table>");
+                    sw.WriteLine("<table border=\".1\" width=\"1000\" cellspacing=\"0\" bordercolor=\"#808080\" bordercolorlight=\"#808080\" bordercolordark=\"#FFFFFF\" cellpadding=\"0\" height=\"62\">");
+                    sw.WriteLine("<tbody><tr>");
+                    sw.WriteLine("<td width=\"60\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">NAM</font></b></td>");
+                    sw.WriteLine("<td width=\"60\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">NÖÕ</font></b></td>");
+                    sw.WriteLine("<td width=\"350\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">HOÏ VAØ TEÂN</font></b></td>");
+                    sw.WriteLine("<td width=\"150\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">PHAÙP DANH</font></b></td>");
+                    sw.WriteLine("<td width=\"150\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">NAÊM SINH</font></b></td>");
+                    sw.WriteLine("<td width=\"100\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">TUOÅI</font></b></td>");
+                    sw.WriteLine("<td width=\"130\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">SAO</font></b></td>");
+                    sw.WriteLine("<td width=\"130\" align=\"center\" height=\"39\"><b><font face=\"VNI-Times\" size=\"3\">HẠN</font></b></td>");
+                    sw.WriteLine("</tr>");
+                    //Dữ liệu thêm vào
+                    foreach (List<string> sublist in ls)
                     {
-                        ls[count].Add(item.SubItems[1].Text);
-                        ls[count].Add(item.SubItems[2].Text);
-                        ls[count].Add(item.SubItems[3].Text);
-                        ls[count].Add(item.SubItems[4].Text);
-                        ls[count].Add(item.SubItems[5].Text);
-                        ls[count].Add(item.SubItems[6].Text);
-                        ls[count].Add(item.SubItems[7].Text);
-
-                        count++;
-                    }
-                }
-                try
-                {
-                    string filePath = "D:/file.docx";
-                    using (WordprocessingDocument wordDocument = WordprocessingDocument.Create(filePath, WordprocessingDocumentType.Document))
-                    {
-                        // Add a main document part
-                        MainDocumentPart mainPart = wordDocument.AddMainDocumentPart();
-                        // Create a new document tree
-
-                        mainPart.Document = new Document();
-                        // Create a body for the document
-
-                        DocumentFormat.OpenXml.Wordprocessing.Body body = new DocumentFormat.OpenXml.Wordprocessing.Body();
-
-                        // Add a paragraph to the body
-                        Paragraph paragraph = new Paragraph();
-                        Run run = new Run();
-
-                        foreach (List<string> sublist in ls)
+                        sw.WriteLine("<tr>");
+                        foreach (string subitem in sublist)
                         {
-                            foreach (string subitem in sublist)
-                            {
-                                run.Append(new Text(subitem + "\n"));
-                            }
-                            run.Append(new Break());
+
+                            sw.WriteLine("<td width=\"130\" align=\"center\" height=\"39\"><b>" + subitem + "</b></td>"); //name //nam//nu
+
+
                         }
-                        paragraph.Append(run);
-                        body.Append(paragraph);
+                        sw.WriteLine("</tr>");
 
-                        // Add the body to the document
-                        mainPart.Document.Append(body);
-                        
+
                     }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.ToString());
+
+
+
+                    sw.WriteLine("</body></html>");
+
+
 
                 }
-            
+                Process.Start("C:\\Git\\test.html");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+
+            }
+
 
         }
 
