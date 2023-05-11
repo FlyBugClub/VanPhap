@@ -529,7 +529,7 @@ namespace VanPhap.View
             try
             {
                 // tạo tệp mới
-                string path = @"C:\Git\test.html";
+                string path = @"C:\Git\VanPhap\VanPhap\test\test.html";
                 File.Create(path).Close();
                 using (StreamWriter sw = new StreamWriter(path))
                 {
