@@ -71,48 +71,61 @@ namespace VanPhap
         {
 
             /////////////////
-           
-            string taiKHoan = txt_Account.Text;
-            string matKhau = txt_Password.Text;
-            /*   string id = txt_nguyenquan.Text;
-               string phapdanh1 = txt_nickname.Text;*/
 
-            string query = "SELECT mat_khau FROM tblAccount where tai_khoan = @id";
-            using (OleDbConnection connection = new OleDbConnection(strCon))
+            if (txt_Account.Text.Equals(""))
             {
-                connection.Open();
-                using (OleDbCommand command = new OleDbCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@id", taiKHoan);
-                    using (OleDbDataReader reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            // Lấy dữ liệu từ các cột của bảng
-                            
-                            string name = (string)reader["mat_khau"];
-                            txt_sosanhmatkhau.Text = name;
-                            // Xử lý dữ liệu tại đây
-                        }
-                    }
-                }
-            }
-
-
-            string kiemtraMatKhau = txt_sosanhmatkhau.Text;
-            if (kiemtraMatKhau.Equals(matKhau))
-            {
-                form_manage m = new form_manage();
-                m.Show();
+                MessageBox.Show("Vui lòng nhập tài khoản!");
             }
             else
             {
-                MessageBox.Show("SAI TAI KHOAN HOAC MAT KHAU!");
+                string taiKHoan = txt_Account.Text;
+                string matKhau = txt_Password.Text;
+                /*   string id = txt_nguyenquan.Text;
+                   string phapdanh1 = txt_nickname.Text;*/
+
+                string query = "SELECT mat_khau, tai_khoan FROM tblAccount where tai_khoan = @id";
+                using (OleDbConnection connection = new OleDbConnection(strCon))
+                {
+                    connection.Open();
+                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@id", taiKHoan);
+                        using (OleDbDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                // Lấy dữ liệu từ các cột của bảng
+                            
+                                string matkhau = (string)reader["mat_khau"];
+                                txt_sosanhmatkhau.Text = matkhau;
+                                // Xử lý dữ liệu tại đây
+
+                                string taikhoan = (string)reader["tai_khoan"];
+                                txt_taikhoan.Text = taikhoan;
+                            }
+                        }
+                    }
+                }
+
+                string KTTaiKhoan = txt_taikhoan.Text;
+
+                string kiemtraMatKhau = txt_sosanhmatkhau.Text;
+                if (KTTaiKhoan.Equals(""))
+                {
+                    MessageBox.Show("Sai tài khoản!");
+                }
+                else if (kiemtraMatKhau.Equals(matKhau))
+                {
+                    form_manage m = new form_manage();
+                    /*this.Close();*/
+                    m.Show();
+                }
+                
+                else
+                {
+                    MessageBox.Show("Sai mật khẩu!");
+                }
             }
-
-
-
-
         }
 
         private void pressEnter(object sender, KeyEventArgs e)
