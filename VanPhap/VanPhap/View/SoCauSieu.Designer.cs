@@ -126,6 +126,7 @@
             this.txt_idchubai.Name = "txt_idchubai";
             this.txt_idchubai.Size = new System.Drawing.Size(152, 42);
             this.txt_idchubai.TabIndex = 31;
+            this.txt_idchubai.Visible = false;
             // 
             // txt_id
             // 
@@ -138,6 +139,7 @@
             this.txt_id.TabIndex = 30;
             this.txt_id.TabStop = false;
             this.txt_id.Text = " ";
+            this.txt_id.Visible = false;
             // 
             // txt_gioi_tinh
             // 
@@ -189,6 +191,7 @@
             this.txt_loaiso.ReadOnly = true;
             this.txt_loaiso.Size = new System.Drawing.Size(175, 42);
             this.txt_loaiso.TabIndex = 101;
+            this.txt_loaiso.Visible = false;
             // 
             // txt_diachi
             // 
@@ -238,6 +241,7 @@
             this.rbm_Woman.TabIndex = 24;
             this.rbm_Woman.Text = "Nữ";
             this.rbm_Woman.UseVisualStyleBackColor = true;
+            this.rbm_Woman.Visible = false;
             // 
             // rbm_Man
             // 
@@ -253,6 +257,7 @@
             this.rbm_Man.TabStop = true;
             this.rbm_Man.Text = "Nam";
             this.rbm_Man.UseVisualStyleBackColor = true;
+            this.rbm_Man.Visible = false;
             // 
             // lbl_name
             // 
@@ -629,7 +634,7 @@
             this.Controls.Add(this.rdbtn_coso);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            
+            this.Name = "SoCauSieu";
             this.Text = "SoCauSieu";
             this.Load += new System.EventHandler(this.SoCauSieu_Load);
             this.pnl_Form.ResumeLayout(false);

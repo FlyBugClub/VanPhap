@@ -47,8 +47,8 @@
             this.txt_matkhaumoi.Location = new System.Drawing.Point(300, 155);
             this.txt_matkhaumoi.Margin = new System.Windows.Forms.Padding(4);
             this.txt_matkhaumoi.Name = "txt_matkhaumoi";
-            this.txt_matkhaumoi.Size = new System.Drawing.Size(273, 35);
-            this.txt_matkhaumoi.TabIndex = 10;
+            this.txt_matkhaumoi.Size = new System.Drawing.Size(273, 42);
+            this.txt_matkhaumoi.TabIndex = 2;
             this.txt_matkhaumoi.UseSystemPasswordChar = true;
             // 
             // lbl_matkhaumoi
@@ -58,7 +58,7 @@
             this.lbl_matkhaumoi.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_matkhaumoi.Location = new System.Drawing.Point(34, 159);
             this.lbl_matkhaumoi.Name = "lbl_matkhaumoi";
-            this.lbl_matkhaumoi.Size = new System.Drawing.Size(147, 27);
+            this.lbl_matkhaumoi.Size = new System.Drawing.Size(182, 34);
             this.lbl_matkhaumoi.TabIndex = 9;
             this.lbl_matkhaumoi.Text = "Mật khẩu mới";
             // 
@@ -69,8 +69,8 @@
             this.txt_matkhauhientai.Location = new System.Drawing.Point(300, 105);
             this.txt_matkhauhientai.Margin = new System.Windows.Forms.Padding(4);
             this.txt_matkhauhientai.Name = "txt_matkhauhientai";
-            this.txt_matkhauhientai.Size = new System.Drawing.Size(273, 35);
-            this.txt_matkhauhientai.TabIndex = 8;
+            this.txt_matkhauhientai.Size = new System.Drawing.Size(273, 42);
+            this.txt_matkhauhientai.TabIndex = 1;
             // 
             // lbl_matkhaucu
             // 
@@ -79,7 +79,7 @@
             this.lbl_matkhaucu.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_matkhaucu.Location = new System.Drawing.Point(34, 109);
             this.lbl_matkhaucu.Name = "lbl_matkhaucu";
-            this.lbl_matkhaucu.Size = new System.Drawing.Size(181, 27);
+            this.lbl_matkhaucu.Size = new System.Drawing.Size(222, 34);
             this.lbl_matkhaucu.TabIndex = 7;
             this.lbl_matkhaucu.Text = "Mật khẩu hiện tại";
             // 
@@ -90,8 +90,8 @@
             this.txt_xacnhanmatkhau.Location = new System.Drawing.Point(300, 205);
             this.txt_xacnhanmatkhau.Margin = new System.Windows.Forms.Padding(4);
             this.txt_xacnhanmatkhau.Name = "txt_xacnhanmatkhau";
-            this.txt_xacnhanmatkhau.Size = new System.Drawing.Size(273, 35);
-            this.txt_xacnhanmatkhau.TabIndex = 12;
+            this.txt_xacnhanmatkhau.Size = new System.Drawing.Size(273, 42);
+            this.txt_xacnhanmatkhau.TabIndex = 3;
             this.txt_xacnhanmatkhau.UseSystemPasswordChar = true;
             // 
             // lbl_xanhnhanmatkhau
@@ -101,7 +101,7 @@
             this.lbl_xanhnhanmatkhau.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_xanhnhanmatkhau.Location = new System.Drawing.Point(34, 209);
             this.lbl_xanhnhanmatkhau.Name = "lbl_xanhnhanmatkhau";
-            this.lbl_xanhnhanmatkhau.Size = new System.Drawing.Size(205, 27);
+            this.lbl_xanhnhanmatkhau.Size = new System.Drawing.Size(254, 34);
             this.lbl_xanhnhanmatkhau.TabIndex = 11;
             this.lbl_xanhnhanmatkhau.Text = "Xác nhận mật khẩu ";
             // 
@@ -112,7 +112,7 @@
             this.btn_doimatkhau.Location = new System.Drawing.Point(252, 274);
             this.btn_doimatkhau.Name = "btn_doimatkhau";
             this.btn_doimatkhau.Size = new System.Drawing.Size(145, 40);
-            this.btn_doimatkhau.TabIndex = 13;
+            this.btn_doimatkhau.TabIndex = 4;
             this.btn_doimatkhau.Text = "Đổi";
             this.btn_doimatkhau.UseVisualStyleBackColor = true;
             this.btn_doimatkhau.Click += new System.EventHandler(this.btn_doimatkhau_Click);
@@ -124,7 +124,7 @@
             this.lbl_doimatkhau.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_doimatkhau.Location = new System.Drawing.Point(237, 27);
             this.lbl_doimatkhau.Name = "lbl_doimatkhau";
-            this.lbl_doimatkhau.Size = new System.Drawing.Size(174, 31);
+            this.lbl_doimatkhau.Size = new System.Drawing.Size(206, 37);
             this.lbl_doimatkhau.TabIndex = 14;
             this.lbl_doimatkhau.Text = "Đổi mật khẩu";
             // 
@@ -135,9 +135,11 @@
             this.txt_IdMatKhauHT.Location = new System.Drawing.Point(264, 106);
             this.txt_IdMatKhauHT.Margin = new System.Windows.Forms.Padding(4);
             this.txt_IdMatKhauHT.Name = "txt_IdMatKhauHT";
-            this.txt_IdMatKhauHT.Size = new System.Drawing.Size(28, 35);
+            this.txt_IdMatKhauHT.Size = new System.Drawing.Size(28, 42);
             this.txt_IdMatKhauHT.TabIndex = 15;
+            this.txt_IdMatKhauHT.TabStop = false;
             this.txt_IdMatKhauHT.UseSystemPasswordChar = true;
+            this.txt_IdMatKhauHT.Visible = false;
             // 
             // ChangePassword
             // 

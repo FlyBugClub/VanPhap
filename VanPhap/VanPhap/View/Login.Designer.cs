@@ -71,7 +71,7 @@
             this.txt_Account.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Account.Name = "txt_Account";
             this.txt_Account.Size = new System.Drawing.Size(273, 42);
-            this.txt_Account.TabIndex = 4;
+            this.txt_Account.TabIndex = 1;
             this.txt_Account.TextChanged += new System.EventHandler(this.txt_Account_TextChanged);
             this.txt_Account.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Account_KeyPress);
             // 
@@ -83,7 +83,7 @@
             this.txt_Password.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.Size = new System.Drawing.Size(273, 42);
-            this.txt_Password.TabIndex = 6;
+            this.txt_Password.TabIndex = 2;
             this.txt_Password.UseSystemPasswordChar = true;
             this.txt_Password.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.txt_Password.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Password_KeyPress);
@@ -108,7 +108,7 @@
             this.btn_Login.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(170, 43);
-            this.btn_Login.TabIndex = 7;
+            this.btn_Login.TabIndex = 3;
             this.btn_Login.Text = "Đăng nhập";
             this.btn_Login.UseVisualStyleBackColor = true;
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
@@ -122,6 +122,7 @@
             this.txt_sosanhmatkhau.Name = "txt_sosanhmatkhau";
             this.txt_sosanhmatkhau.Size = new System.Drawing.Size(21, 42);
             this.txt_sosanhmatkhau.TabIndex = 9;
+            this.txt_sosanhmatkhau.TabStop = false;
             this.txt_sosanhmatkhau.Visible = false;
             this.txt_sosanhmatkhau.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -134,6 +135,7 @@
             this.txt_taikhoan.Name = "txt_taikhoan";
             this.txt_taikhoan.Size = new System.Drawing.Size(21, 42);
             this.txt_taikhoan.TabIndex = 10;
+            this.txt_taikhoan.TabStop = false;
             this.txt_taikhoan.Visible = false;
             // 
             // button1
@@ -144,7 +146,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(234, 43);
-            this.button1.TabIndex = 11;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Đổi mật khẩu";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);

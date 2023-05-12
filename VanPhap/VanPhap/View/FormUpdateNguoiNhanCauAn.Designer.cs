@@ -259,6 +259,7 @@
             this.rbm_Nu.Name = "rbm_Nu";
             this.rbm_Nu.Size = new System.Drawing.Size(74, 38);
             this.rbm_Nu.TabIndex = 49;
+            this.rbm_Nu.TabStop = true;
             this.rbm_Nu.Text = "Nữ";
             this.rbm_Nu.UseVisualStyleBackColor = true;
             // 
@@ -298,9 +299,8 @@
             this.txt_tuoi.Location = new System.Drawing.Point(554, 15);
             this.txt_tuoi.Margin = new System.Windows.Forms.Padding(4);
             this.txt_tuoi.Name = "txt_tuoi";
-            this.txt_tuoi.ReadOnly = true;
             this.txt_tuoi.Size = new System.Drawing.Size(269, 42);
-            this.txt_tuoi.TabIndex = 43;
+            this.txt_tuoi.TabIndex = 4;
             // 
             // txt_han
             // 
@@ -309,9 +309,8 @@
             this.txt_han.Location = new System.Drawing.Point(554, 116);
             this.txt_han.Margin = new System.Windows.Forms.Padding(4);
             this.txt_han.Name = "txt_han";
-            this.txt_han.ReadOnly = true;
             this.txt_han.Size = new System.Drawing.Size(269, 42);
-            this.txt_han.TabIndex = 47;
+            this.txt_han.TabIndex = 6;
             // 
             // lbl_Sao
             // 
@@ -374,9 +373,8 @@
             this.txt_sao.Location = new System.Drawing.Point(554, 65);
             this.txt_sao.Margin = new System.Windows.Forms.Padding(4);
             this.txt_sao.Name = "txt_sao";
-            this.txt_sao.ReadOnly = true;
             this.txt_sao.Size = new System.Drawing.Size(269, 42);
-            this.txt_sao.TabIndex = 45;
+            this.txt_sao.TabIndex = 5;
             // 
             // txt_idchubai
             // 
@@ -487,12 +485,12 @@
             this.btn_xacnhan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_xacnhan.ImageKey = "add-icon.png";
             this.btn_xacnhan.ImageList = this.imageList1;
-            this.btn_xacnhan.Location = new System.Drawing.Point(884, 121);
+            this.btn_xacnhan.Location = new System.Drawing.Point(877, 58);
             this.btn_xacnhan.Margin = new System.Windows.Forms.Padding(0);
             this.btn_xacnhan.Name = "btn_xacnhan";
             this.btn_xacnhan.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btn_xacnhan.Size = new System.Drawing.Size(175, 49);
-            this.btn_xacnhan.TabIndex = 4;
+            this.btn_xacnhan.TabIndex = 7;
             this.btn_xacnhan.Text = "Xác nhận";
             this.btn_xacnhan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_xacnhan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -505,12 +503,12 @@
             this.txt_update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.txt_update.ImageIndex = 1;
             this.txt_update.ImageList = this.imageList1;
-            this.txt_update.Location = new System.Drawing.Point(884, 64);
+            this.txt_update.Location = new System.Drawing.Point(879, 115);
             this.txt_update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_update.Name = "txt_update";
             this.txt_update.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
             this.txt_update.Size = new System.Drawing.Size(173, 49);
-            this.txt_update.TabIndex = 6;
+            this.txt_update.TabIndex = 8;
             this.txt_update.Text = "Cập nhật";
             this.txt_update.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.txt_update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;

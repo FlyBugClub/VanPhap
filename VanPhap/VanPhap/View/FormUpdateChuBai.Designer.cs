@@ -103,6 +103,7 @@
             this.lbl_sex.Size = new System.Drawing.Size(121, 34);
             this.lbl_sex.TabIndex = 5;
             this.lbl_sex.Text = "Giới tính";
+            this.lbl_sex.Visible = false;
             this.lbl_sex.Click += new System.EventHandler(this.lbl_sex_Click);
             // 
             // txt_id1
@@ -114,6 +115,8 @@
             this.txt_id1.Name = "txt_id1";
             this.txt_id1.Size = new System.Drawing.Size(241, 42);
             this.txt_id1.TabIndex = 36;
+            this.txt_id1.TabStop = false;
+            this.txt_id1.Visible = false;
             this.txt_id1.TextChanged += new System.EventHandler(this.txt_id1_TextChanged);
             // 
             // rbm_Man
@@ -127,9 +130,9 @@
             this.rbm_Man.Name = "rbm_Man";
             this.rbm_Man.Size = new System.Drawing.Size(94, 38);
             this.rbm_Man.TabIndex = 22;
-            this.rbm_Man.TabStop = true;
             this.rbm_Man.Text = "Nam";
             this.rbm_Man.UseVisualStyleBackColor = true;
+            this.rbm_Man.Visible = false;
             // 
             // rbm_Woman
             // 
@@ -143,6 +146,7 @@
             this.rbm_Woman.TabIndex = 24;
             this.rbm_Woman.Text = "Nữ";
             this.rbm_Woman.UseVisualStyleBackColor = true;
+            this.rbm_Woman.Visible = false;
             // 
             // lbl_nguyen_quan
             // 
@@ -165,7 +169,7 @@
             this.txt_nguyenquan.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nguyenquan.Name = "txt_nguyenquan";
             this.txt_nguyenquan.Size = new System.Drawing.Size(241, 42);
-            this.txt_nguyenquan.TabIndex = 5;
+            this.txt_nguyenquan.TabIndex = 4;
             // 
             // txt_diachi
             // 
@@ -175,7 +179,7 @@
             this.txt_diachi.Margin = new System.Windows.Forms.Padding(4);
             this.txt_diachi.Name = "txt_diachi";
             this.txt_diachi.Size = new System.Drawing.Size(241, 42);
-            this.txt_diachi.TabIndex = 4;
+            this.txt_diachi.TabIndex = 3;
             // 
             // lbl_LuuTru
             // 
@@ -243,6 +247,7 @@
             this.txt_gioi_tinh.Name = "txt_gioi_tinh";
             this.txt_gioi_tinh.Size = new System.Drawing.Size(12, 42);
             this.txt_gioi_tinh.TabIndex = 29;
+            this.txt_gioi_tinh.TabStop = false;
             this.txt_gioi_tinh.Visible = false;
             // 
             // imageList1
@@ -271,7 +276,7 @@
             this.btn_update.Margin = new System.Windows.Forms.Padding(0);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(173, 49);
-            this.btn_update.TabIndex = 68;
+            this.btn_update.TabIndex = 5;
             this.btn_update.Text = "Cập nhật";
             this.btn_update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_update.UseVisualStyleBackColor = true;
