@@ -35,6 +35,7 @@
             this.txt_Password = new System.Windows.Forms.TextBox();
             this.lbl_Password = new System.Windows.Forms.Label();
             this.btn_Login = new System.Windows.Forms.Button();
+            this.txt_sosanhmatkhau = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl_Title
@@ -110,12 +111,25 @@
             this.btn_Login.UseVisualStyleBackColor = true;
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
+            // txt_sosanhmatkhau
+            // 
+            this.txt_sosanhmatkhau.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_sosanhmatkhau.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_sosanhmatkhau.Location = new System.Drawing.Point(583, 44);
+            this.txt_sosanhmatkhau.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_sosanhmatkhau.Name = "txt_sosanhmatkhau";
+            this.txt_sosanhmatkhau.Size = new System.Drawing.Size(21, 42);
+            this.txt_sosanhmatkhau.TabIndex = 9;
+            this.txt_sosanhmatkhau.Visible = false;
+            this.txt_sosanhmatkhau.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(617, 252);
+            this.Controls.Add(this.txt_sosanhmatkhau);
             this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.txt_Password);
             this.Controls.Add(this.lbl_Password);
@@ -140,5 +154,6 @@
         private System.Windows.Forms.TextBox txt_Password;
         private System.Windows.Forms.Label lbl_Password;
         private System.Windows.Forms.Button btn_Login;
+        private System.Windows.Forms.TextBox txt_sosanhmatkhau;
     }
 }

@@ -62,12 +62,12 @@
             this.txt_idchubai = new System.Windows.Forms.TextBox();
             this.txt_GioiTinhThemVaoDb = new System.Windows.Forms.TextBox();
             this.pnl_Form = new System.Windows.Forms.Panel();
+            this.txt_tuoiii = new System.Windows.Forms.TextBox();
             this.lbl_PhieuDiemThongTin = new System.Windows.Forms.Label();
             this.pnl_list = new System.Windows.Forms.Panel();
             this.lbl_danhsach = new System.Windows.Forms.Label();
             this.btn_xacnhan = new System.Windows.Forms.Button();
             this.txt_update = new System.Windows.Forms.Button();
-            this.txt_tuoiii = new System.Windows.Forms.TextBox();
             this.pnl_Form.SuspendLayout();
             this.pnl_list.SuspendLayout();
             this.SuspendLayout();
@@ -211,6 +211,7 @@
             this.txt_birthday.Name = "txt_birthday";
             this.txt_birthday.Size = new System.Drawing.Size(271, 42);
             this.txt_birthday.TabIndex = 3;
+            this.txt_birthday.Leave += new System.EventHandler(this.txt_birthday_Leave);
             // 
             // txt_nickname
             // 
@@ -432,6 +433,16 @@
             this.pnl_Form.Size = new System.Drawing.Size(845, 229);
             this.pnl_Form.TabIndex = 65;
             // 
+            // txt_tuoiii
+            // 
+            this.txt_tuoiii.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_tuoiii.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tuoiii.Location = new System.Drawing.Point(644, 166);
+            this.txt_tuoiii.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_tuoiii.Name = "txt_tuoiii";
+            this.txt_tuoiii.Size = new System.Drawing.Size(97, 42);
+            this.txt_tuoiii.TabIndex = 64;
+            // 
             // lbl_PhieuDiemThongTin
             // 
             this.lbl_PhieuDiemThongTin.AutoSize = true;
@@ -486,7 +497,6 @@
             this.btn_xacnhan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_xacnhan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_xacnhan.UseVisualStyleBackColor = true;
-          
             // 
             // txt_update
             // 
@@ -506,16 +516,6 @@
             this.txt_update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.txt_update.UseVisualStyleBackColor = true;
             this.txt_update.Click += new System.EventHandler(this.txt_update_Click);
-            // 
-            // txt_tuoiii
-            // 
-            this.txt_tuoiii.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_tuoiii.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tuoiii.Location = new System.Drawing.Point(644, 166);
-            this.txt_tuoiii.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_tuoiii.Name = "txt_tuoiii";
-            this.txt_tuoiii.Size = new System.Drawing.Size(97, 42);
-            this.txt_tuoiii.TabIndex = 64;
             // 
             // FormUpdateNguoiNhanCauAn
             // 

@@ -17,7 +17,7 @@ namespace VanPhap
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new form_manage());
+            Application.Run(new Login());
         }
     }
 }
