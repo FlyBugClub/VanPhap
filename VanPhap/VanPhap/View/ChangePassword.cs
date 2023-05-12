@@ -51,27 +51,65 @@ namespace VanPhap.View
             string matKHoanHT = txt_matkhauhientai.Text;
             string matKhauMoi = txt_matkhaumoi.Text;
             string xacNhanMatKhauMoi = txt_xacnhanmatkhau.Text;
-
-            string query = "SELECT mat_khau FROM tblAccount where mat_khau = @id";
-            using (OleDbConnection connection = new OleDbConnection(strCon))
+            if (matKHoanHT.Equals("") || matKhauMoi.Equals("") || xacNhanMatKhauMoi.Equals(""))
             {
-                connection.Open();
-                using (OleDbCommand command = new OleDbCommand(query, connection))
+                MessageBox.Show("Không được bỏ trống thông tin!");
+            }
+            else
+            {
+                string query = "SELECT tai_khoan, mat_khau FROM tblAccount where mat_khau = @id AND tai_khoan = \"phapvan\"";
+                using (OleDbConnection connection = new OleDbConnection(strCon))
                 {
-                    command.Parameters.AddWithValue("@id", matKHoanHT);
-                    using (OleDbDataReader reader = command.ExecuteReader())
+                    connection.Open();
+                    using (OleDbCommand command = new OleDbCommand(query, connection))
                     {
-                        while (reader.Read())
+                        command.Parameters.AddWithValue("@id", matKHoanHT);
+                        using (OleDbDataReader reader = command.ExecuteReader())
                         {
-                            // Lấy dữ liệu từ các cột của bảng
+                            while (reader.Read())
+                            {
+                                // Lấy dữ liệu từ các cột của bảng
 
-                            string name = (string)reader["mat_khau"];
-                            txt_IdMatKhauHT.Text = name;
-                            // Xử lý dữ liệu tại đây
+                                string name = (string)reader["mat_khau"];
+                                txt_IdMatKhauHT.Text = name;
+                                // Xử lý dữ liệu tại đây
+                            }
                         }
                     }
+                }//đóng
+                 //////
+                 /////
+                string kiemTraMatKhau = txt_IdMatKhauHT.Text;
+                if (kiemTraMatKhau.Equals(matKHoanHT))
+                {
+                    if (xacNhanMatKhauMoi.Equals(matKhauMoi))
+                    {
+                        string queryString = "UPDATE tblAccount SET mat_khau = @matkhau WHERE tai_khoan = \"phapvan\"";
+                        using (OleDbConnection connection = new OleDbConnection(strCon))
+                        {
+                            OleDbCommand command = new OleDbCommand(queryString, connection);
+                            command.Parameters.AddWithValue("@matkhau", xacNhanMatKhauMoi);
+
+                            connection.Open();
+                            command.ExecuteNonQuery();
+                        }
+                        MessageBox.Show("Đổi mật khẩu thành công!");
+                        Login c = new Login();
+                        c.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xác nhận mật khẩu phải trùng với mật khẩu mới!");
+                    }
                 }
+                else
+                {
+                    MessageBox.Show("Mật khẩu hiện tại chưa hợp lý!");
+                }//else
             }
+            
+
+
         }
     }
 }
