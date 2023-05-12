@@ -94,8 +94,9 @@ namespace VanPhap.View
                             command.ExecuteNonQuery();
                         }
                         MessageBox.Show("Đổi mật khẩu thành công!");
-                        Login c = new Login();
-                        c.Show();
+                        Application.Restart();
+                        
+                       
                     }
                     else
                     {

@@ -90,7 +90,7 @@
             this.txt_id_chu_bai.Location = new System.Drawing.Point(395, 18);
             this.txt_id_chu_bai.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id_chu_bai.Name = "txt_id_chu_bai";
-            this.txt_id_chu_bai.Size = new System.Drawing.Size(16, 35);
+            this.txt_id_chu_bai.Size = new System.Drawing.Size(16, 42);
             this.txt_id_chu_bai.TabIndex = 29;
             this.txt_id_chu_bai.Visible = false;
             // 
@@ -101,7 +101,7 @@
             this.label1.Location = new System.Drawing.Point(464, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 27);
+            this.label1.Size = new System.Drawing.Size(100, 34);
             this.label1.TabIndex = 300;
             this.label1.Text = "Địa chỉ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -112,7 +112,7 @@
             this.txt_diachi.Location = new System.Drawing.Point(657, 18);
             this.txt_diachi.Margin = new System.Windows.Forms.Padding(4);
             this.txt_diachi.Name = "txt_diachi";
-            this.txt_diachi.Size = new System.Drawing.Size(241, 35);
+            this.txt_diachi.Size = new System.Drawing.Size(241, 42);
             this.txt_diachi.TabIndex = 3;
             // 
             // lbl_LuuTru
@@ -122,7 +122,7 @@
             this.lbl_LuuTru.Location = new System.Drawing.Point(464, 76);
             this.lbl_LuuTru.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_LuuTru.Name = "lbl_LuuTru";
-            this.lbl_LuuTru.Size = new System.Drawing.Size(140, 27);
+            this.lbl_LuuTru.Size = new System.Drawing.Size(174, 34);
             this.lbl_LuuTru.TabIndex = 26;
             this.lbl_LuuTru.Text = "Nguyên quán";
             this.lbl_LuuTru.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -133,7 +133,7 @@
             this.txt_nguyenquan.Location = new System.Drawing.Point(657, 71);
             this.txt_nguyenquan.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nguyenquan.Name = "txt_nguyenquan";
-            this.txt_nguyenquan.Size = new System.Drawing.Size(241, 35);
+            this.txt_nguyenquan.Size = new System.Drawing.Size(241, 42);
             this.txt_nguyenquan.TabIndex = 4;
             // 
             // lbl_name
@@ -144,7 +144,7 @@
             this.lbl_name.Location = new System.Drawing.Point(12, 25);
             this.lbl_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(87, 27);
+            this.lbl_name.Size = new System.Drawing.Size(108, 34);
             this.lbl_name.TabIndex = 2;
             this.lbl_name.Text = "Chủ bái";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -155,7 +155,7 @@
             this.txt_name.Location = new System.Drawing.Point(172, 18);
             this.txt_name.Margin = new System.Windows.Forms.Padding(4);
             this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(239, 35);
+            this.txt_name.Size = new System.Drawing.Size(239, 42);
             this.txt_name.TabIndex = 1;
             // 
             // lbl_Birthday
@@ -173,7 +173,7 @@
             this.lbl_NickName.Location = new System.Drawing.Point(12, 79);
             this.lbl_NickName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_NickName.Name = "lbl_NickName";
-            this.lbl_NickName.Size = new System.Drawing.Size(114, 27);
+            this.lbl_NickName.Size = new System.Drawing.Size(141, 34);
             this.lbl_NickName.TabIndex = 28;
             this.lbl_NickName.Text = "Pháp danh";
             this.lbl_NickName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -184,7 +184,7 @@
             this.txt_nickname.Location = new System.Drawing.Point(172, 73);
             this.txt_nickname.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nickname.Name = "txt_nickname";
-            this.txt_nickname.Size = new System.Drawing.Size(241, 35);
+            this.txt_nickname.Size = new System.Drawing.Size(241, 42);
             this.txt_nickname.TabIndex = 2;
             // 
             // pnl_List
@@ -355,7 +355,7 @@
             this.btn_huy_bo.Name = "btn_huy_bo";
             this.btn_huy_bo.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
             this.btn_huy_bo.Size = new System.Drawing.Size(180, 49);
-            this.btn_huy_bo.TabIndex = 7;
+            this.btn_huy_bo.TabIndex = 8;
             this.btn_huy_bo.Text = "Hủy bỏ";
             this.btn_huy_bo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_huy_bo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -388,7 +388,7 @@
             this.lbl_DanhsachChuBai.Location = new System.Drawing.Point(25, 178);
             this.lbl_DanhsachChuBai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_DanhsachChuBai.Name = "lbl_DanhsachChuBai";
-            this.lbl_DanhsachChuBai.Size = new System.Drawing.Size(230, 31);
+            this.lbl_DanhsachChuBai.Size = new System.Drawing.Size(286, 38);
             this.lbl_DanhsachChuBai.TabIndex = 301;
             this.lbl_DanhsachChuBai.Text = "Danh sách chủ bái";
             this.lbl_DanhsachChuBai.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -405,7 +405,7 @@
             this.btn_lammoi.Name = "btn_lammoi";
             this.btn_lammoi.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
             this.btn_lammoi.Size = new System.Drawing.Size(180, 49);
-            this.btn_lammoi.TabIndex = 302;
+            this.btn_lammoi.TabIndex = 7;
             this.btn_lammoi.Text = "Làm mới";
             this.btn_lammoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_lammoi.UseVisualStyleBackColor = true;

@@ -213,6 +213,7 @@
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(9, 42);
             this.txt_id.TabIndex = 30;
+            this.txt_id.TabStop = false;
             this.txt_id.Visible = false;
             // 
             // lbl_NickName

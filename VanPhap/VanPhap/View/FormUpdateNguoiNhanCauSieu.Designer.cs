@@ -360,7 +360,6 @@
             this.txt_sao.Location = new System.Drawing.Point(554, 65);
             this.txt_sao.Margin = new System.Windows.Forms.Padding(4);
             this.txt_sao.Name = "txt_sao";
-            this.txt_sao.ReadOnly = true;
             this.txt_sao.Size = new System.Drawing.Size(269, 42);
             this.txt_sao.TabIndex = 6;
             // 
@@ -451,7 +450,6 @@
             this.txt_han.Location = new System.Drawing.Point(554, 116);
             this.txt_han.Margin = new System.Windows.Forms.Padding(4);
             this.txt_han.Name = "txt_han";
-            this.txt_han.ReadOnly = true;
             this.txt_han.Size = new System.Drawing.Size(269, 42);
             this.txt_han.TabIndex = 7;
             // 
@@ -474,7 +472,6 @@
             this.txt_tuoi.Location = new System.Drawing.Point(554, 15);
             this.txt_tuoi.Margin = new System.Windows.Forms.Padding(4);
             this.txt_tuoi.Name = "txt_tuoi";
-            this.txt_tuoi.ReadOnly = true;
             this.txt_tuoi.Size = new System.Drawing.Size(269, 42);
             this.txt_tuoi.TabIndex = 5;
             // 
